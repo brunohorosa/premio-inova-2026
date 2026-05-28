@@ -3,9 +3,9 @@
 Repositório de trabalho da equipe para organização e versionamento das propostas de inscrição no **9º Prêmio Inova Minas Gerais** (Edital SEPLAG/SCPRH Nº 01/2026).
 
 **Equipe:**
-- Guilherme de Melo Ferreira — Proponente responsável
-- Bruno Henrique de Oliveira Rosa — Proponente suplente
-- Gabriel Braico Dornas — Integrante
+- Guilherme de Melo Ferreira
+- Bruno Henrique de Oliveira Rosa
+- Gabriel Braico Dornas
 
 ---
 
