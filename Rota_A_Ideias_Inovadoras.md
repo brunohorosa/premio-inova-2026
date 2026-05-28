@@ -16,7 +16,7 @@ A viabilidade técnica da abordagem já foi demonstrada em escopo restrito na Su
 Apesar dos avanços de transformação digital, uma parcela significativa da operação cotidiana do Estado permanece dependente de sistemas hospedados no mainframe da PRODEMGE, acessados via terminal TN3270 (pw3270). Trata-se do núcleo operacional de processos críticos:
 SIAFI/MG , execução orçamentária e financeira: aprovação e anulação de cotas, remanejamento de crédito, descentralização orçamentária (executada mensalmente por todos os órgãos do Estado), pagamentos, consultas de saldo.
 SIAD , Sistema Integrado de Administração de Materiais e Serviços: compras, contratos, almoxarifado, patrimônio. Utilizado por equipes de logística e administração de praticamente todas as unidades.
-**SISAP , administração de pessoal: movimentações de pessoal, folha de pagamento e aposentadorias.**
+SISAP , administração de pessoal: movimentações funcionais, folha de pagamento, aposentadorias, progressões, promoções, concessão de férias regulamentares e prêmio, quinquênios, lançamento de faltas e demais operações do ciclo funcional do servidor, realizadas mensalmente por equipes de RH em todos os órgãos do Estado.
 **Outros sistemas legados hospedados no mesmo terminal, com a mesma natureza de operação tela a tela.**
 Nesse cenário, três problemas estruturais coexistem:
 ### 2.1. Operação manual em escala que consome capacidade analítica
