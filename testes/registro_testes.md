@@ -43,9 +43,9 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 | Hora de fim | 11:58:22 |
 | Tempo total | **13 min 53 seg** |
 | Operações realizadas | 50/50 |
-| Erros ou falhas | A verificar |
-| Quedas ou instabilidades | A verificar |
-| Versão do Power Automate | A verificar |
+| Erros ou falhas | **Nenhum** |
+| Quedas ou instabilidades | **Nenhuma** |
+| Versão do Power Automate | 2.68.00237.26118 |
 | Computador disponível durante execução? | Não, dedicado |
 | Observações | Horários registrados automaticamente pelas variáveis HoraInicio e HoraFim |
 
