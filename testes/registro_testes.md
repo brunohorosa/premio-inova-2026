@@ -39,15 +39,15 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 | Campo | Registro |
 |---|---|
 | Data do teste | 29/05/2026 |
-| Hora de início | 11:20 |
-| Hora de fim | 11:34:05 |
-| Tempo total | **14 min 05 seg** |
+| Hora de início | 11:44:29 |
+| Hora de fim | 11:58:22 |
+| Tempo total | **13 min 53 seg** |
 | Operações realizadas | 50/50 |
 | Erros ou falhas | A verificar |
 | Quedas ou instabilidades | A verificar |
 | Versão do Power Automate | A verificar |
 | Computador disponível durante execução? | Não, dedicado |
-| Observações | Tempo registrado manualmente |
+| Observações | Horários registrados automaticamente pelas variáveis HoraInicio e HoraFim |
 
 > **Dica:** tirar print do histórico de execuções do Power Automate com hora de início e fim de cada fluxo.
 
