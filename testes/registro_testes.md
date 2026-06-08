@@ -57,15 +57,15 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 
 | Campo | Registro |
 |---|---|
-| Data do teste | |
-| Hora de início | |
-| Hora de fim | |
-| Tempo total | |
-| Operações realizadas | /50 |
-| Erros ou falhas | |
-| Erros de lançamento incorreto | |
+| Data do teste | 02/06/2026 |
+| Hora de início | 16:02:09 |
+| Hora de fim | 16:02:37 |
+| Tempo total | **28 segundos** |
+| Operações realizadas | 50/50 |
+| Erros ou falhas | **Nenhum** |
+| Erros de lançamento incorreto | **Zero, todos retornaram REGISTRO EFETUADO** |
 | Computador disponível durante execução? | Sim, livre |
-| Observações | |
+| Observações | Log gerado automaticamente pelo script |
 
 > **Dica:** o script já registra automaticamente início, fim e resultado de cada operação no log.
 
@@ -79,7 +79,7 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 |---|---|---|---|---|
 | Manual | | | Sim | Sim, o tempo todo |
 | Power Automate | | | Sim | Parcial |
-| Python/py3270 | | | Não | Não |
+| Python/py3270 | **28 segundos** | **0** | Não | Não |
 
 ---
 
@@ -89,8 +89,8 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 
 | Comparação | Redução de Tempo | Redução de Erros |
 |---|---|---|
-| Python vs Manual | % | % |
-| Python vs Power Automate | % | % |
+| Python vs Manual | A calcular após teste manual | A calcular |
+| Python vs Power Automate | **97% mais rápido** | **Igual (zero erros nos dois)** |
 
 ---
 
