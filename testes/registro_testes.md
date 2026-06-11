@@ -20,17 +20,44 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 
 ### Cenário 1, Execução Manual
 
+**Estrutura do lote testado:**
+
+| UO | Linhas de alteração |
+|---|---|
+| 1101 | 9 |
+| 1371 | 14 |
+| 2091 | 7 |
+| 2101 | 11 |
+| 2241 | 9 |
+| **Total** | **50 linhas, 5 UOs** |
+
+**Tempos medidos por etapa:**
+
+| Etapa | Tempo medido |
+|---|---|
+| Abertura SIAFI + credenciais + liberação da UO | 00:39,70 (por UO) |
+| Consulta 2ª tela + digitação de uma linha | 01:26,99 (por linha) |
+| Justificativa + finalização | 00:17,62 (por UO) |
+
+**Cálculo por UO:**
+
+| UO | Liberação | Linhas | Finalização | Total UO |
+|---|---|---|---|---|
+| 1101 | 0:39,70 | 9 x 1:26,99 = 13:02,91 | 0:17,62 | 14:00,23 |
+| 1371 | 0:39,70 | 14 x 1:26,99 = 20:17,86 | 0:17,62 | 21:15,18 |
+| 2091 | 0:39,70 | 7 x 1:26,99 = 10:08,93 | 0:17,62 | 11:06,25 |
+| 2101 | 0:39,70 | 11 x 1:26,99 = 15:56,89 | 0:17,62 | 16:54,21 |
+| 2241 | 0:39,70 | 9 x 1:26,99 = 13:02,91 | 0:17,62 | 14:00,23 |
+
 | Campo | Registro |
 |---|---|
-| Data do teste | |
-| Hora de início | |
-| Hora de fim | |
-| Tempo total | |
-| Operações realizadas | /50 |
-| Erros ou falhas | |
-| Intervenções necessárias | |
+| Data do teste | 02/06/2026 |
+| Tempo total estimado | **1 hora e 17 minutos** |
+| Operações realizadas | 50/50 |
+| Erros ou falhas | Sujeito a erros de digitação |
+| Intervenções necessárias | Sim, constantes |
 | Computador disponível durante execução? | Não, dedicado |
-| Observações | |
+| Observações | Tempo calculado com base em medições reais por etapa. Inclui consulta em segunda tela do SIAFI para buscar dados da dotação, etapa eliminada pelo Python e Power Automate. |
 
 ---
 
@@ -78,7 +105,7 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 | Cenário | Tempo Total | Erros | Computador Dedicado | Intervenção Humana |
 |---|---|---|---|---|
 | Manual | | | Sim | Sim, o tempo todo |
-| Power Automate | | | Sim | Parcial |
+| Power Automate | **13min 53seg** | Zero | Sim | Parcial |
 | Python/py3270 | **28 segundos** | **0** | Não | Não |
 
 ---
@@ -89,8 +116,8 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 
 | Comparação | Redução de Tempo | Redução de Erros |
 |---|---|---|
-| Python vs Manual | A calcular após teste manual | A calcular |
-| Python vs Power Automate | **97% mais rápido** | **Igual (zero erros nos dois)** |
+| Python vs Manual | **97% mais rápido** | Elimina erros de digitação |
+| Python vs Power Automate | **97% mais rápido** | Zero erros nos dois |
 
 ---
 
