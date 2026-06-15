@@ -66,9 +66,10 @@ Construímos duas propostas **intencionalmente distintas**, cada uma com objeto,
 
 ## Pendências antes do envio
 
-- [ ] Levantar números reais dos logs do sistema Python (substituir placeholders na Rota B)
-- [ ] Realizar testes comparativos: manual vs Power Automate vs Python/py3270
+- [x] Levantar números reais dos logs do sistema Python (substituir placeholders na Rota B)
+- [x] Realizar testes comparativos: manual vs Power Automate vs Python/py3270
 - [ ] Alinhar com PCMG os dados de volume para os testes
 - [ ] Confirmar usernames para a inscrição no gov.br
 - [ ] Revisão final dos dois textos pela equipe
+- [ ] **Ajuste de consistência Rota A:** o repositório `siafi-automacao-descentralizacao` (instalação via WSL local) traz no RUNBOOK a instrução "Não mexa no computador enquanto ele trabalha". Isso contradiz a narrativa da Rota A de "Plataforma Virtual TN3270" (sem computador dedicado, execução em infraestrutura de governo via API). Necessário: (1) corrigir/atualizar o RUNBOOK do robô, e (2) revisar a Rota A para garantir coerência entre o que está descrito como arquitetura da plataforma e o que está implementado e público no repositório de produção.
 
