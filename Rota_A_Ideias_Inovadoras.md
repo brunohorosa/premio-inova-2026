@@ -72,6 +72,8 @@ Cada hora que um servidor deixa de gastar digitando é uma hora devolvida à mis
 
 O ponto comum é claro: a plataforma não substitui o servidor, ela o liberta da parte mecânica do trabalho para que ele se dedique ao que exige inteligência humana, e que beneficia diretamente o cidadão. O alcance real dependerá de cada órgão adotar e aproveitar a plataforma, mas o caminho fica aberto para todos.
 
+**[NOVO] Esse benefício, aliás, já é reconhecido e medido pelo próprio Estado. Entre os indicadores oficiais de sucesso da política de automação mineira está o número de servidores reposicionados, pessoas que deixaram de executar tarefa repetitiva e passaram a atuar em atividades de maior valor. A plataforma proposta foi desenhada para ampliar exatamente esse indicador, levando-o aos sistemas estruturantes mais críticos e, com isso, a todas as áreas do Estado que servem diretamente ao cidadão. É uma diretriz de gestão que orienta o trabalho da equipe proponente: pensar primeiro no órgão atendido e em quem ele serve.**
+
 # 5. Atendimento aos critérios de avaliação
 
 A seguir, os oito critérios da Categoria Ideias Inovadoras Implementáveis (subitem 7.3.2 do Edital), com seus pesos.
@@ -101,6 +103,8 @@ Este é o critério em que a plataforma mais se destaca. Como SIAFI, SIAD e SISA
 ## 5.6. Capacidade de multiplicação (peso 1)
 
 A solução é multiplicável por desenho. Por ser software livre, qualquer órgão adota o núcleo sem adaptação e sem custo. O catálogo de fluxos cresce de forma colaborativa: cada fluxo construído por um órgão fica disponível para todos. O custo marginal de cada nova automação é decrescente. E a multiplicação ultrapassa o Executivo estadual: outros Poderes, Municípios e demais estados que operam terminais TN3270, situação ainda comum no Brasil, podem adotar a plataforma sem custo. Minas passa a exportar tecnologia pública.
+
+**[NOVO] Há ainda um vetor de multiplicação imediato e concreto: a base de automações que o Estado já possui. O programa Automatiza.MG contabiliza mais de 110 robôs criados, mais de 10 mil horas economizadas e dezenas de servidores reposicionados para atividades de maior valor. Parte relevante dessas automações opera justamente sobre SIAFI, SIAD e SISAP, a própria biblioteca do programa descreve robôs para empenhos, liquidações, pagamentos e inserção de dados nesses sistemas. São exatamente as operações em terminal legado nas quais a abordagem visual encontra mais limitações de estabilidade. A plataforma proposta oferece a essa base já instalada um motor técnico mais robusto, rápido e auditável: automações que hoje rodam de forma frágil podem migrar para uma fundação mais sólida, sem reescrever a lógica de negócio, apenas trocando a camada que conversa com o sistema. A multiplicação, portanto, não parte do zero, encontra um ecossistema de automação maduro e em expansão pronto para se beneficiar.**
 
 ## 5.7. Governabilidade (peso 1)
 
