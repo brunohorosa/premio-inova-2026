@@ -178,7 +178,7 @@ A replicabilidade já foi demonstrada empiricamente, internamente à SPLOR, com 
 
 Os requisitos de ambiente também favorecem a replicabilidade. A solução opera em qualquer Linux moderno (Ubuntu, por exemplo, gratuito e de baixíssimo consumo de hardware) ou em Windows via WSL (Windows Subsystem for Linux), recurso nativo das versões atuais do sistema. Não há exigência de Windows Pro ou Enterprise, não há exigência de mínimo de núcleos de CPU, não há licença adicional para execução não atendida. Para fins de comparação direta, a documentação oficial do Power Automate Desktop estabelece como requisitos: Windows 10/11 Pro/Enterprise ou Windows Server (ARM não suportado); ao menos quatro núcleos de CPU para execução não atendida; .NET Framework instalado; e licenciamento adicional do plano Process para automações sem supervisão humana. Cada uma dessas exigências, multiplicada pela escala estadual, representa custo institucional não trivial. A abordagem aqui apresentada elimina todos.
 
-A sustentabilidade operacional ao longo do tempo é favorecida por três fatores: o stack técnico utilizado (x3270, Python, py3270) é maduro e estável há décadas, com baixíssima frequência de mudanças disruptivas; a documentação no repositório permite que novos servidores assumam manutenção sem dependência de seus autores originais; e a integração proposta com a Rede Automatiza.MG cria uma estrutura institucional formal para manter a plataforma viva, com governança compartilhada e capacitação articulada. A possibilidade adicional de centralização em servidor, viabilizada pela natureza headless do stack, reforça a sustentabilidade: uma central de execução, mantida por equipe pequena, pode atender a dezenas de órgãos sem necessidade de dispersar competência técnica.
+A sustentabilidade operacional ao longo do tempo é favorecida por três fatores: o stack técnico utilizado (x3270, Python, py3270) é maduro e estável há décadas, com baixíssima frequência de mudanças disruptivas; a documentação no repositório permite que novos servidores assumam a manutenção sem dependência dos autores originais; e a disseminação aos órgãos é uma diretriz estratégica da própria SPLOR, que conduz a iniciativa com sua equipe autora à frente, garantindo governança e continuidade institucional. A possibilidade adicional de execução em servidor, viabilizada pela natureza headless do stack, reforça a sustentabilidade ao permitir que uma equipe enxuta mantenha e dissemine a solução para múltiplos órgãos.
 
 ## 6.5. Relevância da solução e geração de valor (peso 3)
 
@@ -188,7 +188,7 @@ Em escala maior, a relevância se amplia: a operação de sistemas legados via t
 
 # 7. Origem e relação com o contexto institucional
 
-A presente iniciativa tem origem na cultura de automação aberta pelo programa Automatiza.MG. O Curso Básico de Power Automate, oferecido gratuitamente pela SEPLAG e aberto a todos os servidores estaduais, foi o ponto de partida que despertou a equipe da SPLOR para o potencial da automação de processos. Sem esse primeiro contato com o tema, a jornada que levou ao desenvolvimento desta biblioteca provavelmente não teria acontecido.
+A iniciativa tem uma fagulha inicial honesta: o primeiro contato da equipe da SPLOR com o tema da automação se deu por um curso básico de Power Automate oferecido pela SEPLAG. Daí em diante, a trajetória foi inteiramente própria. Ao aplicar o Power Automate ao terminal PRODEMGE, a equipe esbarrou em suas limitações técnicas para sistemas legados e, por conta própria, pesquisou, projetou e desenvolveu a biblioteca em Python aqui apresentada, tecnicamente muito superior. A autoria, o desenvolvimento e a evolução da solução são da equipe da DCMEFO/SPLOR.
 
 A biblioteca proposta não compete com o Power Automate, nem com o programa Automatiza.MG. Compete com a operação manual em sistemas legados, esta sim, a verdadeira ineficiência que precisa ser superada. Power Automate continua sendo solução adequada para a vasta maioria dos casos cobertos pelo programa: fluxos pontuais, no ecossistema Microsoft moderno, construídos por servidores não técnicos. A presente iniciativa cobre o nicho complementar de sistemas legados estruturantes, em escala, com necessidade de governança formal, em que o RPA visual apresenta limitação técnica reconhecida.
 
@@ -202,7 +202,7 @@ Expansão da biblioteca para o SIAD (compras, almoxarifado, patrimônio), com fl
 
 Expansão da biblioteca para o SISAP (administração de pessoal), automatizando operações de alto volume como movimentações funcionais, folha, aposentadorias, progressões e concessão de férias, em articulação com as áreas de gestão de pessoas.
 
-Compartilhamento da biblioteca com a Rede Automatiza.MG e com outros órgãos interessados, aproveitando o canal já existente de troca de experiências entre servidores que desenvolvem automações no Estado.
+Disseminação da biblioteca aos órgãos do Estado, conduzida pela SPLOR como diretriz estratégica de servir seus órgãos clientes, com documentação, capacitação e suporte à adoção.
 
 Documentação institucional, capacitação técnica e abertura formal dos repositórios para contribuições de servidores de outros órgãos.
 
