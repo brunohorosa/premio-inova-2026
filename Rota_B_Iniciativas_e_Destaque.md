@@ -116,9 +116,17 @@ A inovação não compete com o Automatiza.MG, soma-se a ele. O programa existen
 
 ## 5.2. Efeitos da inovação na simplificação administrativa (peso 3)
 
+**[NOVO] Um efeito menos óbvio, porém central: ao mapear as rotinas para automatizá-las, evidenciou-se que parte das tarefas manuais resultava de fluxos burocráticos que podiam ser redesenhados e simplificados. A iniciativa, portanto, não apenas automatiza o processo existente, mas o repensa, evitando a simples reprodução digital de ineficiências, no espírito da Política de Simplificação do Estado.**
+
 A iniciativa atua diretamente no objeto do Decreto nº 47.441/2018. Substitui a digitação manual repetitiva em sistemas legados, provavelmente a forma mais onerosa de execução administrativa ainda presente na máquina pública, por preenchimento estruturado em planilha, com execução automática. Os efeitos práticos já se observam na SPLOR: padronização do procedimento entre membros da equipe (todos usam a mesma planilha-modelo e o mesmo script), redução drástica do tempo de execução, eliminação de retrabalho associado a erros, geração automática de trilha de auditoria. Indiretamente, a maior agilidade da execução orçamentária se traduz em pagamentos mais rápidos a fornecedores e maior capacidade de resposta do Estado a demandas extraordinárias.
 
+**[NOVO] A automação revelou uma oportunidade que vai além da tecnologia: ao mapear as rotinas, evidenciou-se que parte das tarefas manuais resultava de fluxos burocráticos que podiam ser redesenhados e simplificados. A iniciativa, portanto, não apenas automatiza o processo existente, mas o repensa, evitando a simples reprodução digital de ineficiências analógicas.**
+
+**[NOVO] Há ainda um efeito de simplificação que vai além de acelerar o que já existe: ao mapear as rotinas para automatizá-las, evidenciou-se que parte das tarefas manuais resultava de fluxos burocráticos passíveis de redesenho e simplificação. A iniciativa, portanto, não apenas automatiza o processo, mas o repensa, evitando a reprodução digital de ineficiências analógicas.**
+
 ## 5.3. Geração de valor público com foco no usuário (peso 3)
+
+**[NOVO] Cabe registrar que o objetivo de reposicionar o servidor para atividades de maior valor não é um discurso construído para esta inscrição: é a tese que orienta a iniciativa desde sua concepção, em 2024, documentada desde o início como a finalidade central da automação. A evolução tecnológica para o Python apenas potencializou um propósito que sempre foi o mesmo.**
 
 A pessoa usuária imediata é a própria servidora ou servidor que opera os sistemas legados. O desenho da iniciativa nasceu da empatia direta com essa realidade, a equipe que construiu a solução é a mesma que sofria com a operação manual. Por isso a planilha de entrada espelha o formato com que a equipe já organizava seus dados, e o log de retorno responde, em linguagem clara, às perguntas que o servidor faz ao final de um lote ("deu certo?", "quais linhas falharam?", "qual o número do documento?").
 
@@ -127,6 +135,16 @@ O valor entregue é tangível: horas de trabalho recuperadas, risco de erro virt
 **[NOVO] O encadeamento de valor é direto: a automação libera o servidor da tarefa operacional, que passa a dedicar mais tempo à atividade-fim do órgão, e essa atividade-fim é, em última instância, o que chega ao cidadão. No caso da execução orçamentária, recurso que se move mais rápido e com menos erro significa serviços públicos executados no prazo e fornecedores pagos em dia.**
 
 **[NOVO] O ganho mais profundo, porém, não é o tempo, é a elevação da natureza do trabalho. Um servidor que passa o expediente digitando tela a tela não tem como analisar, conferir com profundidade, planejar ou propor melhorias. Liberado da tarefa mecânica, ele passa a exercer o trabalho que exige inteligência humana: acompanhar a execução, qualificar a informação, controlar melhor os recursos e abrir espaço para inovar. Não se trata de reduzir pessoas, e sim de reposicioná-las para atividades de maior valor, exatamente o que mede o indicador oficial de servidores reposicionados da política de automação do Estado. O efeito final é uma cadeia virtuosa: melhor uso do tempo gera informação de melhor qualidade, que gera controle mais próximo, que gera mais qualidade do gasto público e, no fim, mais valor ao cidadão. A manifestação da PCMG (seção 4.4) é a comprovação concreta dessa cadeia em funcionamento.**
+
+**[NOVO] Esse é o sentido mais profundo da gestão orçamentária moderna, que superou a lógica do mero controle do gasto para incorporar a do desempenho: o que importa é a relação entre os recursos alocados e os resultados entregues à sociedade. Ao devolver tempo qualificado ao servidor, a automação contribui diretamente para essa qualificação da decisão e do gasto público.**
+
+**[NOVO] Esse propósito de reposicionar o servidor para atividades de maior valor não foi construído para esta inscrição: é a tese que orienta a iniciativa desde a concepção, em 2024, documentada desde o início como a finalidade central da automação. A evolução tecnológica para o Python apenas potencializou um objetivo que sempre foi o mesmo.**
+
+**[NOVO] Isso dialoga com a lógica do orçamento por desempenho, em que importa a relação entre os recursos alocados e os resultados entregues à sociedade: qualificar o tempo do servidor é condição para qualificar a própria decisão orçamentária e, com ela, a qualidade do gasto público.**
+
+**[NOVO] Esse propósito, o de reposicionar o servidor para o trabalho de maior valor, não foi construído para esta inscrição: é a tese que orienta a iniciativa desde sua concepção, em 2024, documentada desde o início como finalidade central da automação. A evolução para o Python potencializou um objetivo que sempre foi o mesmo.**
+
+**[NOVO] Isso dialoga com a lógica do orçamento por desempenho, em que importa menos o mero controle do gasto e mais a relação entre os recursos alocados e os resultados entregues à sociedade: liberar o servidor para a análise é condição para qualificar a decisão orçamentária e, com ela, a qualidade do gasto público.**
 
 ## 5.4. Grau de agilidade na implantação (peso 2)
 
@@ -220,7 +238,13 @@ A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplin
 
 # 8. Origem e relação com o contexto institucional
 
+**[NOVO] A iniciativa não é recente nem improvisada: trata-se de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. A trajetória foi inclusive objeto de produção técnica e acadêmica pela própria equipe, o que evidencia o caráter consolidado e documentado da iniciativa, anterior e independente desta inscrição.**
+
 A iniciativa tem uma fagulha inicial honesta: o primeiro contato da equipe da SPLOR com o tema da automação se deu por um curso básico de Power Automate oferecido pela SEPLAG. Daí em diante, a trajetória foi inteiramente própria. Ao aplicar o Power Automate ao terminal PRODEMGE, a equipe esbarrou em suas limitações técnicas para sistemas legados e, por conta própria, pesquisou, projetou e desenvolveu a biblioteca em Python aqui apresentada, tecnicamente muito superior. A autoria, o desenvolvimento e a evolução da solução são da equipe da DCMEFO/SPLOR.
+
+**[NOVO] A iniciativa não é recente nem improvisada: é uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. Essa trajetória foi inclusive objeto de produção técnica e acadêmica pela própria equipe, o que evidencia o caráter consolidado e documentado do trabalho, anterior e independente desta inscrição.**
+
+**[NOVO] A iniciativa não é recente nem improvisada: trata-se de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. A trajetória foi inclusive objeto de produção técnica e acadêmica pela própria equipe, evidência do caráter consolidado e documentado da iniciativa, que evoluiu da primeira geração até a solução em Python aqui apresentada.**
 
 A biblioteca proposta não compete com o Power Automate, nem com o programa Automatiza.MG. Compete com a operação manual em sistemas legados, esta sim, a verdadeira ineficiência que precisa ser superada. Power Automate continua sendo solução adequada para a vasta maioria dos casos cobertos pelo programa: fluxos pontuais, no ecossistema Microsoft moderno, construídos por servidores não técnicos. A presente iniciativa cobre o nicho complementar de sistemas legados estruturantes, em escala, com necessidade de governança formal, em que o RPA visual apresenta limitação técnica reconhecida.
 
