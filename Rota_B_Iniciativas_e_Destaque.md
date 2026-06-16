@@ -12,7 +12,7 @@ automação aberta, governada e auditável de sistemas legados do Estado (SIAFI,
 
 # 1. Resumo da iniciativa
 
-Esta iniciativa apresenta uma biblioteca Python para automação programática do terminal TN3270 da PRODEMGE, desenvolvida e implementada na Superintendência Central de Planejamento Orçamentário (SPLOR/SEPLAG) e atualmente em produção com dois fluxos operacionais aplicados ao SIAFI/MG: aprovação e anulação de cotas orçamentárias e remanejamento de crédito. A iniciativa demonstra, em escala real, uma abordagem técnica complementar à do programa Automatiza.MG, especializada para o cenário específico de sistemas legados, em que o RPA visual baseado em captura de tela apresenta limitações estruturais.
+Esta iniciativa apresenta uma biblioteca Python para automação programática do terminal TN3270 da PRODEMGE, desenvolvida e implementada na Superintendência Central de Planejamento Orçamentário (SPLOR/SEPLAG) e atualmente em produção com múltiplos fluxos aplicados ao SIAFI/MG, entre eles aprovação e anulação de cotas, remanejamento de crédito e descentralização de cotas para Unidades Executoras. A iniciativa demonstra, em escala real, uma abordagem técnica complementar à do programa Automatiza.MG, especializada para o cenário específico de sistemas legados, em que o RPA visual baseado em captura de tela apresenta limitações estruturais.
 
 **[NOVO] A plataforma já opera transações da área orçamentária em produção: aprovação, descentralização e remanejamento de cotas orçamentárias, realocação de créditos orçamentários e geração automática de minutas para publicação de decretos orçamentários. A mesma arquitetura permite expandir para qualquer outra transação do SIAFI, incluindo empenhos, liquidações, ordens de pagamento, folha de pessoal e restos a pagar, sem necessidade de nova infraestrutura, cobrindo o sistema em sua totalidade.**
 
@@ -40,7 +40,7 @@ A camada de base utiliza a biblioteca py3270 (interface Python para o emulador x
 
 ## 3.2. Fluxos em produção
 
-Sobre o núcleo técnico, foram desenvolvidos dois fluxos completos, hoje em uso pela equipe da SPLOR:
+Sobre o núcleo técnico, foram desenvolvidos três fluxos completos, hoje em uso em produção:
 
 **Aprovação e anulação de cota orçamentária **(repositório siafi-automacao-cota): lê planilha Excel padronizada com as operações a serem realizadas, faz login no SIAFI, navega até a transação de movimentação orçamentária, preenche os campos (mês, fonte, UO, grupo de despesa, ação, valor), executa a operação e captura linha a linha o retorno do sistema (sucesso, código de erro específico, número do documento gerado). Suporta as duas variantes, aprovação global e aprovação amarrada, e o fluxo reverso de anulação.
 
@@ -110,9 +110,13 @@ A pessoa usuária imediata é a própria servidora ou servidor que opera os sist
 
 O valor entregue é tangível: horas de trabalho recuperadas, risco de erro virtualmente eliminado, segurança quanto ao resultado de cada operação. Em escala secundária, beneficia pessoas usuárias externas, fornecedores que recebem mais rápido, áreas finalísticas que veem suas demandas orçamentárias processadas com mais agilidade, e o cidadão, último beneficiário da maior eficiência do Estado.
 
+**[NOVO] O encadeamento de valor é direto: a automação libera o servidor da tarefa operacional, que passa a dedicar mais tempo à atividade-fim do órgão, e essa atividade-fim é, em última instância, o que chega ao cidadão. No caso da execução orçamentária, recurso que se move mais rápido e com menos erro significa serviços públicos executados no prazo e fornecedores pagos em dia.**
+
 ## 5.4. Grau de agilidade na implantação (peso 2)
 
 A prova de implantação ágil já está dada. A iniciativa saiu da ideia inicial para a operação em produção em poucos meses, com o primeiro fluxo (cota) implantado primeiro e o segundo (crédito) construído em prazo significativamente menor, graças à reutilização da arquitetura. A entrega ocorre em ciclos curtos: cada fluxo novo é módulo independente, que pode ser desenvolvido, testado e colocado em produção em semanas, e gera benefício imediato sem depender da conclusão do projeto como um todo.
+
+**[NOVO] O terceiro fluxo, a descentralização de cotas, confirma esse padrão de agilidade: já chegou ao estágio mais maduro de empacotamento, com instalador automatizado e manual em linguagem simples, e foi validado externamente pela PCMG, evidenciando que cada novo fluxo não apenas reaproveita a arquitetura, mas avança em facilidade de adoção.**
 
 ## 5.5. Grau de alcance (peso 2)
 
@@ -129,6 +133,8 @@ O alcance se torna especialmente expressivo quando se considera processos como a
 ## 5.6. Capacidade de multiplicação (peso 1)
 
 A iniciativa já comprovou empiricamente sua capacidade de multiplicação: o segundo fluxo (crédito) foi construído a partir do primeiro (cota) com esforço significativamente reduzido, validando a arquitetura. Externamente à SPLOR, a multiplicação se viabiliza por três caminhos: (i) os repositórios são públicos no GitHub e podem ser clonados e adaptados por qualquer órgão; (ii) o stack é integralmente gratuito (Python, py3270, x3270/s3270, Git), sem custo de adoção; (iii) a arquitetura modular permite que cada novo órgão contribua com fluxos próprios para a biblioteca compartilhada. A multiplicação alcança naturalmente outros entes federativos: Municípios mineiros e demais estados que operem terminais TN3270, situação ainda comum no setor público brasileiro, podem adotar a solução sem qualquer adaptação institucional.
+
+**[NOVO] Há ainda um vetor de multiplicação imediato: a base de automações que o Estado já possui. O programa Automatiza.MG contabiliza mais de 110 robôs e milhares de horas economizadas, e parte relevante dessas automações opera justamente sobre SIAFI, SIAD e SISAP, terreno em que a abordagem visual é mais frágil. Essas automações podem migrar para o motor mais robusto desta biblioteca sem reescrever a lógica de negócio, apenas trocando a camada que conversa com o sistema. A multiplicação, portanto, encontra um ecossistema maduro e pronto para se beneficiar.**
 
 # 6. Habilitação ao Destaque em Automatização e Inteligência Artificial
 
@@ -193,6 +199,8 @@ Com a institucionalização da iniciativa, planejam-se os seguintes desenvolvime
 Atendimento aos oito órgãos que já demandaram a automação da descentralização de cotas, com implantação da versão Python e acompanhamento dos resultados, ampliando a base de órgãos atendidos.
 
 Expansão da biblioteca para o SIAD (compras, almoxarifado, patrimônio), com fluxos prioritários a serem definidos em conjunto com a Subsecretaria de Logística e Patrimônio.
+
+Expansão da biblioteca para o SISAP (administração de pessoal), automatizando operações de alto volume como movimentações funcionais, folha, aposentadorias, progressões e concessão de férias, em articulação com as áreas de gestão de pessoas.
 
 Compartilhamento da biblioteca com a Rede Automatiza.MG e com outros órgãos interessados, aproveitando o canal já existente de troca de experiências entre servidores que desenvolvem automações no Estado.
 
