@@ -94,7 +94,7 @@ Antes da iniciativa, a operação manual não produzia registro estruturado: o s
 
 A construção do segundo fluxo (remanejamento de crédito) a partir do primeiro (cota orçamentária) validou empiricamente a tese de que a arquitetura é replicável com custo marginal decrescente. Funções como login, navegação por menus principais e finalização de documentos foram reaproveitadas sem qualquer modificação. O esforço de desenvolvimento do segundo fluxo foi significativamente menor que o do primeiro, indicando que cada novo fluxo subsequente exigirá ainda menos esforço.
 
-## 4.4. Validação pelo órgão piloto: o depoimento da PCMG
+## 4.5. Validação pelo órgão piloto: o depoimento da PCMG
 
 A Polícia Civil de Minas Gerais (PCMG), primeiro órgão a adotar a automação de descentralização de cotas, avaliou formalmente a solução em produção. O resultado relatado é uma prova direta do valor gerado, na voz de quem usa.
 
@@ -241,6 +241,8 @@ A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplin
 **[NOVO] A iniciativa não é recente nem improvisada: trata-se de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. A trajetória foi inclusive objeto de produção técnica e acadêmica pela própria equipe, o que evidencia o caráter consolidado e documentado da iniciativa, anterior e independente desta inscrição.**
 
 A iniciativa tem uma fagulha inicial honesta: o primeiro contato da equipe da SPLOR com o tema da automação se deu por um curso básico de Power Automate oferecido pela SEPLAG. Daí em diante, a trajetória foi inteiramente própria. Ao aplicar o Power Automate ao terminal PRODEMGE, a equipe esbarrou em suas limitações técnicas para sistemas legados e, por conta própria, pesquisou, projetou e desenvolveu a biblioteca em Python aqui apresentada, tecnicamente muito superior. A autoria, o desenvolvimento e a evolução da solução são da equipe da DCMEFO/SPLOR.
+
+**[NOVO] A iniciativa não é recente nem improvisada. Trata-se de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. A trajetória foi, inclusive, objeto de produção técnica e acadêmica pela própria equipe, o que evidencia seu caráter consolidado e documentado, e não uma solução construída às pressas.**
 
 **[NOVO] A iniciativa não é recente nem improvisada: é uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO. Essa trajetória foi inclusive objeto de produção técnica e acadêmica pela própria equipe, o que evidencia o caráter consolidado e documentado do trabalho, anterior e independente desta inscrição.**
 
