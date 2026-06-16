@@ -154,11 +154,11 @@ Em outras palavras: a parte mais difícil, provar que dá para automatizar com r
 
 A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplinar da SEPLAG, cuja complementaridade de competências foi decisiva para transformar uma necessidade real de trabalho em uma solução técnica robusta:
 
-**Guilherme de Melo Ferreira, **desenvolvedor principal da solução, responsável pela construção técnica da biblioteca e dos fluxos de automação.
+**Guilherme de Melo Ferreira, **principal responsável técnico pela solução. Atua na arquitetura, na construção e na evolução da biblioteca e dos fluxos de automação, tendo concebido o desenho modular que torna a solução robusta e replicável (comprovado pela construção do segundo e do terceiro fluxos reaproveitando o núcleo do primeiro). Reúne as frentes de desenvolvimento, arquitetura de software e gestão técnica do projeto.
 
-**Bruno Henrique de Oliveira Rosa, **servidor com domínio do negócio orçamentário e da operação do SIAFI, que atua como ponte entre a necessidade real da área e a solução, contribuindo também no desenvolvimento.
+**Bruno Henrique de Oliveira Rosa, **servidor com domínio do negócio orçamentário e da operação do SIAFI. Atua na concepção da solução com contribuições de melhoria de processos, novas ideias de controle e na evolução dos fluxos, além de participar do desenvolvimento. Faz a ponte entre a necessidade real da área e a solução técnica.
 
-**Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto, avaliando a viabilidade das ideias e orientando os melhores caminhos de implementação.
+**Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto. Avalia a viabilidade das ideias propostas pela equipe e orienta os melhores caminhos de implementação, dando respaldo técnico às decisões.
 
 É justamente a soma dessas três frentes, conhecimento do negócio, capacidade de desenvolvimento e assessoria de inteligência de dados, que dá solidez à iniciativa e sustenta sua continuidade.
 
