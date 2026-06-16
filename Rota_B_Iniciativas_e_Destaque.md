@@ -72,11 +72,13 @@ A iniciativa está em produção há meses e produziu resultados verificáveis e
 
 **[NOVO] Resultado do teste comparativo (50 operações idênticas, mesma máquina, mesmo sistema, em produção): execução manual estimada em cerca de 1 hora e 17 minutos; Power Automate em 13 minutos e 53 segundos; biblioteca Python em apenas 28 segundos. A biblioteca foi cerca de 97% mais rápida que a operação manual e aproximadamente 30 vezes mais rápida que o Power Automate, com zero erro de lançamento nos três casos automatizados. Todos os 50 lançamentos via Python retornaram REGISTRO EFETUADO.**
 
-**[DADO INTERNO A LEVANTAR PELA EQUIPE] Volume total já processado pela automação em produção: inserir número de execuções, de dotações/operações processadas e, se possível, valor total movimentado pela solução em Python, além das horas/mês economizadas pela equipe da SPLOR. Caracterizar também os 8 órgãos demandantes (áreas/portes) e o volume da PCMG no piloto.**
+**[NOVO] Para além do teste controlado, os números de produção comprovam o uso real e em escala. Somente no fluxo de remanejamento de crédito e alterações orçamentárias, em menos de um mês de operação (19/05 a 16/06/2026), a automação gerou 109 documentos no SIAFI, processou 257 linhas de alteração orçamentária e alocou cerca de R$ 1,72 bilhão em recursos suplementados, atendendo 29 unidades orçamentárias distintas, sem erros de lançamento. Trata-se de um único dos fluxos em produção: os fluxos de aprovação de cotas, remanejamento pela administração central e descentralização de cotas operam em adição a este.**
 
 ## 4.1. Tempo de execução
 
 Lotes que, em modo manual, consumiam mais de uma hora de digitação ininterrupta passaram a ser executados em menos de meio minuto. No teste comparativo, 50 remanejamentos de crédito levaram cerca de 1h17min no modo manual e 28 segundos pela biblioteca Python, redução superior a 97% no tempo de execução. Em escala de produção, isso significa devolver horas de trabalho qualificado à atividade analítica todos os meses.
+
+**[NOVO] Um caso real de demonstração ilustra o ganho em lotes maiores: um lote consolidado de 257 linhas de alteração orçamentária, distribuídas em 29 unidades orçamentárias, levaria cerca de 6,7 horas para ser digitado manualmente (somando liberação de cada UO, digitação linha a linha e finalização) e cerca de 71 minutos no Power Automate. Pela biblioteca Python, o mesmo lote é processado em aproximadamente 2,4 minutos. O que tomaria praticamente um dia inteiro de trabalho de um servidor é concluído em pouco mais de dois minutos, com o computador livre para outras tarefas durante a execução.**
 
 ## 4.2. Redução de erros
 
@@ -160,7 +162,7 @@ Essa característica técnica abre, ainda, uma possibilidade que o RPA visual es
 
 ## 6.2. Resultado mensurável (peso 2)
 
-Os resultados mensuráveis estão detalhados na seção 4. Em síntese, comprovados por teste comparativo em produção: redução superior a 97% no tempo de execução (de cerca de 1h17min para 28 segundos em um lote de 50 operações), execução cerca de 30 vezes mais rápida que o Power Automate na mesma máquina, eliminação virtual de erros de digitação (todos os lançamentos automatizados retornaram REGISTRO EFETUADO), trilha de auditoria estruturada por log, e validação externa pela PCMG, com oito órgãos já demandando a adoção.
+Os resultados mensuráveis estão detalhados na seção 4 e se sustentam em duas frentes complementares. Em qualidade técnica, comprovada por teste controlado: redução superior a 97% no tempo de execução (de cerca de 1h17min para 28 segundos em um lote de 50 operações) e execução cerca de 30 vezes mais rápida que o Power Automate na mesma máquina, com eliminação virtual de erros de digitação. Em escala de produção, comprovada por dados reais: em menos de um mês, 109 documentos gerados no SIAFI, 257 linhas de alteração processadas, cerca de R$ 1,72 bilhão suplementado e 29 unidades orçamentárias atendidas, somados à validação externa pela PCMG e à demanda formal de oito órgãos. A combinação de superioridade técnica comprovada em laboratório e maturidade comprovada em produção é o que distingue a iniciativa.
 
 ## 6.3. Governança, ética e conformidade (peso 3)
 
