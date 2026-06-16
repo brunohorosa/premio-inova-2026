@@ -78,6 +78,8 @@ O ponto comum é claro: a plataforma não substitui o servidor, ela o liberta da
 
 **[NOVO] Esse benefício, aliás, já é reconhecido e medido pelo próprio Estado. Entre os indicadores oficiais de sucesso da política de automação mineira está o número de servidores reposicionados, pessoas que deixaram de executar tarefa repetitiva e passaram a atuar em atividades de maior valor. A plataforma proposta foi desenhada para ampliar exatamente esse indicador, levando-o aos sistemas estruturantes mais críticos e, com isso, a todas as áreas do Estado que servem diretamente ao cidadão. É uma diretriz de gestão que orienta o trabalho da equipe proponente: pensar primeiro no órgão atendido e em quem ele serve.**
 
+**[NOVO] É importante o que esse reposicionamento significa de fato. Não se trata de reduzir o quadro de pessoal, e sim de elevar a natureza do trabalho: o servidor deixa a digitação repetitiva e passa a analisar, conferir, planejar e inovar. Disso nasce uma cadeia de valor mais ampla, melhor uso do tempo gera informação de melhor qualidade, que permite controle mais próximo dos recursos, que resulta em mais qualidade do gasto público. Essa cadeia não é hipótese: o órgão piloto, a Polícia Civil, relatou oficialmente que, com a automação, sua equipe passou a dedicar menos tempo às rotinas de digitação e mais ao acompanhamento qualificado da execução de contratos e despesas. Em escala estadual, essa transformação do trabalho do servidor é, talvez, o maior valor público que a plataforma pode gerar.**
+
 # 5. Atendimento aos critérios de avaliação
 
 A seguir, os oito critérios da Categoria Ideias Inovadoras Implementáveis (subitem 7.3.2 do Edital), com seus pesos.
