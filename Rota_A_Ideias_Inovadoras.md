@@ -28,6 +28,8 @@ Apesar de toda a transformação digital dos últimos anos, o núcleo da operaç
 
 Cada operação exige digitação manual de informações que, em geral, já estão organizadas em planilhas ou outros sistemas. Multiplicado por milhares de servidores, por todos os órgãos, ao longo de todo o ano, isso representa um volume gigantesco de horas de trabalho qualificado gastas em tarefa mecânica. É tempo que não volta, e que poderia estar sendo usado em análise, planejamento e atendimento.
 
+**[NOVO] O custo não é apenas de tempo. Na lógica contemporânea do orçamento por desempenho, em que importa a relação entre recursos alocados e resultados entregues à sociedade, cada hora de servidor presa à digitação é uma hora subtraída da análise que qualifica o gasto público.**
+
 ## 2.2. As ferramentas atuais não foram feitas para esses sistemas
 
 A ferramenta de automação hoje disponível no Estado, baseada em RPA visual (Power Automate Desktop), é excelente para o ecossistema Microsoft moderno, mas opera no limite quando aplicada ao terminal legado: por não conhecer o protocolo do mainframe, ela trata a tela como uma imagem, simula cliques e captura telas como foto. Qualquer mudança de resolução, posição de janela ou atualização quebra a automação. É uma solução frágil para sistemas tão críticos.
@@ -80,6 +82,12 @@ O ponto comum é claro: a plataforma não substitui o servidor, ela o liberta da
 
 **[NOVO] É importante o que esse reposicionamento significa de fato. Não se trata de reduzir o quadro de pessoal, e sim de elevar a natureza do trabalho: o servidor deixa a digitação repetitiva e passa a analisar, conferir, planejar e inovar. Disso nasce uma cadeia de valor mais ampla, melhor uso do tempo gera informação de melhor qualidade, que permite controle mais próximo dos recursos, que resulta em mais qualidade do gasto público. Essa cadeia não é hipótese: o órgão piloto, a Polícia Civil, relatou oficialmente que, com a automação, sua equipe passou a dedicar menos tempo às rotinas de digitação e mais ao acompanhamento qualificado da execução de contratos e despesas. Em escala estadual, essa transformação do trabalho do servidor é, talvez, o maior valor público que a plataforma pode gerar.**
 
+**[NOVO] Esse encadeamento conecta-se a um conceito central da gestão pública moderna: a passagem do mero controle do gasto para a lógica do desempenho, em que importa a relação entre os recursos alocados e os resultados entregues à sociedade. Liberar o servidor para o trabalho analítico é condição para qualificar a decisão orçamentária e, com ela, a qualidade do gasto público.**
+
+**[NOVO] Esse propósito, vale registrar, acompanha a iniciativa desde a concepção, em 2024, sempre documentado como a finalidade central da automação. Não é um argumento construído para esta proposta: é a linha que orienta o trabalho da equipe desde o início.**
+
+**[NOVO] Tudo isso dialoga com a lógica do orçamento por desempenho, que desloca o foco do mero controle do gasto para a relação entre recursos alocados e resultados entregues à sociedade: qualificar o tempo do servidor é condição para qualificar a decisão orçamentária e a qualidade do gasto público.**
+
 # 5. Atendimento aos critérios de avaliação
 
 A seguir, os oito critérios da Categoria Ideias Inovadoras Implementáveis (subitem 7.3.2 do Edital), com seus pesos.
@@ -92,11 +100,21 @@ A inovação não compete com o Automatiza.MG, soma-se a ele. O Power Automate c
 
 ## 5.2. Efeitos da inovação na simplificação administrativa (peso 3)
 
+**[NOVO] Mais do que automatizar o que já existe, a plataforma abre espaço para repensar o processo: a experiência da equipe mostra que mapear uma rotina para automatizá-la revela tarefas manuais herdadas de fluxos burocráticos que podem ser redesenhados e simplificados. Evita-se, assim, a simples reprodução digital de ineficiências, alinhando a ideia à Política de Simplificação do Estado.**
+
 A ideia atua no coração da Política de Simplificação (Decreto nº 47.441/2018). Substitui a digitação tela a tela, provavelmente a forma mais onerosa de execução administrativa ainda existente, por preenchimento estruturado em planilha com execução automática. Padroniza, entre órgãos diferentes, operações que hoje cada um executa à sua maneira; reduz drasticamente o tempo de execução; elimina retrabalho de erros de digitação; e gera trilha de auditoria automática de cada operação.
+
+**[NOVO] Mais do que automatizar, a abordagem repensa o processo. Ao mapear as rotinas para automatizá-las, evidencia-se que parte das tarefas manuais resulta de fluxos burocráticos que podem ser redesenhados e simplificados, o que evita a simples reprodução digital de ineficiências e potencializa o ganho de simplificação administrativa.**
+
+**[NOVO] A simplificação não se limita a acelerar o que já existe. Ao mapear as rotinas para automatizá-las, torna-se possível identificar tarefas que resultam de fluxos burocráticos passíveis de redesenho. A plataforma, assim, é também um convite à reengenharia dos processos, evitando a reprodução digital de ineficiências e elevando a qualidade do próprio fluxo de trabalho.**
 
 ## 5.3. Geração de valor público com foco no usuário (peso 3)
 
+**[NOVO] O foco em reposicionar o servidor para atividades de maior valor não é um argumento construído para esta inscrição: é a tese que orienta o trabalho da equipe desde 2024, documentada desde o início como a finalidade central da automação. Isso confere autenticidade e consistência à visão aqui apresentada.**
+
 A pessoa usuária imediata é a servidora ou servidor que opera os sistemas, e o desenho nasce da empatia direta com essa realidade: a equipe que concebeu a solução é a mesma que sofria com a operação manual. Mas o valor não para aí. Como detalhado na seção 4, o tempo devolvido ao servidor se converte em melhor atendimento ao cidadão em todas as áreas do Estado, da saúde à segurança. É valor público no sentido mais pleno: melhora a vida de quem opera e a de quem é servido.
+
+**[NOVO] Esse propósito de reposicionar o servidor para atividades de maior valor não é um discurso construído para esta inscrição: é a tese que orienta a iniciativa desde 2024, documentada desde o início como sua finalidade central. A plataforma proposta apenas amplia, para todo o Estado, um objetivo que sempre esteve no centro do trabalho da equipe.**
 
 ## 5.4. Grau de agilidade na implantação (peso 2)
 
@@ -168,7 +186,13 @@ A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplin
 
 # 9. Origem e relação com o contexto institucional
 
+**[NOVO] Embora a categoria seja de ideias inovadoras, vale registrar que a base desta proposta não é improvisada: nasce de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO, trajetória inclusive objeto de produção técnica e acadêmica pela própria equipe. A ideia de plataforma estadual aqui proposta é a evolução natural e documentada desse percurso.**
+
 A ideia tem uma fagulha inicial honesta: o contato da equipe da SPLOR com o tema da automação se deu a partir de um curso básico de Power Automate oferecido pela SEPLAG. Foi o ponto de partida. A partir dali, porém, a trajetória foi inteiramente própria: ao tentar aplicar o Power Automate ao terminal PRODEMGE, a equipe constatou as limitações técnicas dessa abordagem para sistemas legados e, por conta própria, pesquisou, desenhou e desenvolveu uma solução especializada e tecnicamente muito superior, a biblioteca em Python que fundamenta esta proposta. A autoria e a evolução da solução são da própria equipe da DCMEFO/SPLOR.
+
+**[NOVO] Embora a plataforma aqui proposta seja uma evolução, a base de onde ela parte vem de uma linha de trabalho contínua desde maio de 2024, quando os primeiros fluxos de automação entraram em produção na DCMEFO, trajetória inclusive registrada em produção técnica e acadêmica da própria equipe. A ideia, portanto, não nasce do zero: parte de um percurso consolidado e documentado.**
+
+**[NOVO] Vale registrar que esta não é uma ideia improvisada: ela se apoia em uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos de automação entraram em operação na DCMEFO, trajetória inclusive registrada em produção técnica e acadêmica pela própria equipe. A proposta de plataforma estadual é a evolução natural desse percurso consolidado.**
 
 # 10. Resultados esperados com a institucionalização
 
