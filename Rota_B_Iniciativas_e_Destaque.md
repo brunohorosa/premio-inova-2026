@@ -198,7 +198,7 @@ A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplin
 
 **Guilherme de Melo Ferreira, **principal responsável técnico pela solução. Atua na arquitetura, na construção e na evolução da biblioteca e dos fluxos de automação, tendo concebido o desenho modular que torna a solução robusta e replicável (comprovado pela construção do segundo e do terceiro fluxos reaproveitando o núcleo do primeiro). Reúne as frentes de desenvolvimento, arquitetura de software e gestão técnica do projeto.
 
-**Bruno Henrique de Oliveira Rosa, **servidor com domínio do negócio orçamentário e da operação do SIAFI. Atua na concepção da solução com contribuições de melhoria de processos, novas ideias de controle e na evolução dos fluxos, além de participar do desenvolvimento. Faz a ponte entre a necessidade real da área e a solução técnica.
+**Bruno Henrique de Oliveira Rosa, **servidor com domínio técnico do SIAFI e das regras orçamentárias. Traduz os processos operacionais em especificações que orientam a construção das automações, valida o comportamento dos fluxos em produção e participa do desenvolvimento da solução.
 
 **Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto. Avalia a viabilidade das ideias propostas pela equipe e orienta os melhores caminhos de implementação, dando respaldo técnico às decisões.
 
