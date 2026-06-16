@@ -110,6 +110,8 @@ A solução é multiplicável por desenho. Por ser software livre, qualquer órg
 
 **[NOVO] Há ainda um vetor de multiplicação imediato e concreto: a base de automações que o Estado já possui. O programa Automatiza.MG contabiliza mais de 110 robôs criados, mais de 10 mil horas economizadas e dezenas de servidores reposicionados para atividades de maior valor. Parte relevante dessas automações opera justamente sobre SIAFI, SIAD e SISAP, a própria biblioteca do programa descreve robôs para empenhos, liquidações, pagamentos e inserção de dados nesses sistemas. São exatamente as operações em terminal legado nas quais a abordagem visual encontra mais limitações de estabilidade. A plataforma proposta oferece a essa base já instalada um motor técnico mais robusto, rápido e auditável: automações que hoje rodam de forma frágil podem migrar para uma fundação mais sólida, sem reescrever a lógica de negócio, apenas trocando a camada que conversa com o sistema. A multiplicação, portanto, não parte do zero, encontra um ecossistema de automação maduro e em expansão pronto para se beneficiar.**
 
+**[NOVO] A disseminação aos órgãos é, ela própria, uma diretriz estratégica da SPLOR. Sob orientação da Subsecretaria, a área trabalha com a lógica de servir seus órgãos clientes, levando a eles soluções que aumentem sua capacidade operacional. A plataforma nasce alinhada a essa diretriz: foi concebida desde o início para ser compartilhada, e a própria SPLOR conduz essa disseminação, com a equipe autora à frente, sem depender de estrutura externa para levar a solução adiante.**
+
 ## 5.7. Governabilidade (peso 1)
 
 A implantação depende apenas de articulação interna ao Executivo estadual: SEPLAG na governança do padrão, PRODEMGE na gestão do ambiente, e os órgãos na adoção e na proposição de fluxos. Não há dependência de fornecedor externo, nova contratação ou novo perfil de acesso. As credenciais são as que o servidor já tem. Opera em conformidade com a LGPD, pois não coleta novos dados pessoais e produz logs internos auditáveis.
@@ -146,7 +148,7 @@ Em outras palavras: a parte mais difícil, provar que dá para automatizar com r
 
 # 8. Origem e relação com o contexto institucional
 
-A ideia tem origem na cultura de automação aberta pelo programa Automatiza.MG. O Curso Básico de Power Automate, oferecido gratuitamente pela SEPLAG a todos os servidores, foi o ponto de partida que despertou a equipe da SPLOR para o potencial da automação. Ao tentar aplicar o Power Automate ao terminal PRODEMGE, a equipe constatou as limitações técnicas dessa abordagem para sistemas legados, e foi esse obstáculo que motivou a busca por uma solução especializada e mais robusta. A plataforma proposta é complementar ao Automatiza.MG, e sua disseminação pode se dar naturalmente pela Rede Automatiza.MG, canal aberto a servidores que desenvolvem automações no Estado.
+A ideia tem uma fagulha inicial honesta: o contato da equipe da SPLOR com o tema da automação se deu a partir de um curso básico de Power Automate oferecido pela SEPLAG. Foi o ponto de partida. A partir dali, porém, a trajetória foi inteiramente própria: ao tentar aplicar o Power Automate ao terminal PRODEMGE, a equipe constatou as limitações técnicas dessa abordagem para sistemas legados e, por conta própria, pesquisou, desenhou e desenvolveu uma solução especializada e tecnicamente muito superior, a biblioteca em Python que fundamenta esta proposta. A autoria e a evolução da solução são da própria equipe da DCMEFO/SPLOR.
 
 # 9. Resultados esperados com a institucionalização
 
