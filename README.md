@@ -64,6 +64,23 @@ Construímos duas propostas **intencionalmente distintas**, cada uma com objeto,
 
 ---
 
+
+## Atenção ao formato da inscrição (verificar no site)
+
+O edital (itens 2.3 e 2.4) define que a inscrição é feita exclusivamente no site www.premioinova.mg.gov.br, preenchendo três documentos: Formulário de Inscrição (da categoria), Termo de Responsabilidade e Termo de Compromisso.
+
+Pontos confirmados:
+- O edital NÃO especifica limite de caracteres, palavras, páginas ou formato de arquivo. Essas orientações só aparecem no próprio site.
+- A inscrição não é um artigo livre, e sim um formulário com campos (provavelmente alinhados aos critérios de avaliação).
+
+Ação necessária:
+- [ ] Ao abrir o site (28/05) ou antes, verificar os campos exatos do formulário e se há limite de caracteres por campo.
+- [ ] Se houver limite, condensar as seções dos documentos-mãe para caber. Se for campo livre, copiar e colar das seções (que já estão organizadas por critério).
+
+Observação: os documentos Rota_A e Rota_B funcionam como documento-mãe (fonte de verdade). O conteúdo será transposto para o formulário do site no ato da inscrição.
+
+---
+
 ## Pendências antes do envio
 
 - [x] Levantar números reais dos logs do sistema Python (substituir placeholders na Rota B)
