@@ -131,3 +131,33 @@ Comparativo de desempenho entre execução **Manual**, **Power Automate** e **Py
 ---
 
 *Os resultados deste documento serão incorporados às propostas de inscrição no 9º Prêmio Inova Minas Gerais.*
+
+
+---
+
+## Números de Produção (validados em 16/06/2026)
+
+Dados extraídos por script de contagem (leitura da aba ROBO de todos os lotes da pasta "Realizados/Automação Python"), referentes ao fluxo de remanejamento de crédito e alterações orçamentárias.
+
+| Métrica | Valor |
+|---|---|
+| Período | 19/05/2026 a 16/06/2026 (menos de um mês) |
+| Documentos SIAFI gerados (operações) | 109 |
+| Linhas de alteração processadas | 257 (145 suplementações + 112 anulações) |
+| Valor suplementado (recurso alocado) | R$ 1.717.867.307,28 (~R$ 1,72 bilhão) |
+| Unidades orçamentárias atendidas | 29 |
+| Erros de lançamento | Zero |
+
+**Validação do valor:** confirmado por dois caminhos independentes, (1) o consolidado manual (copia.xlsx) bate exatamente com a soma automática dos lotes; (2) escala confirmada pela equipe (valor 35.000.000.000 na planilha = R$ 350 milhões reais, ou seja, valores em centavos).
+
+**Observação:** este é apenas um dos fluxos em produção. Os fluxos de aprovação de cotas, remanejamento pela administração central e descentralização de cotas operam em adição a este e ainda serão quantificados.
+
+## Caso de demonstração, lote grande (257 linhas, 29 UOs)
+
+Tempo estimado para processar o lote consolidado em cada cenário, com base nas medições reais por etapa:
+
+| Cenário | Tempo estimado |
+|---|---|
+| Manual | ~6,7 horas (~400 min) |
+| Power Automate | ~71 minutos |
+| Python/py3270 | ~2,4 minutos |
