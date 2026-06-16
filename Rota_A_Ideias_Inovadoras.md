@@ -12,6 +12,8 @@
 
 O Estado de Minas Gerais inteiro funciona sobre três sistemas estruturantes hospedados no terminal PRODEMGE: o SIAFI, que move o dinheiro público; o SIAD, que cuida das compras, contratos e patrimônio; e o SISAP, que administra as pessoas, da folha de pagamento às aposentadorias. Não há secretaria que escape deles. Saúde, Educação, Segurança Pública, Fazenda, Meio Ambiente, todas dependem desses três sistemas para funcionar no dia a dia.
 
+**[DADO PÚBLICO A VALIDAR] Para dimensionar o que está em jogo: o SIAFI executa um orçamento estadual que, em 2026, soma R$ 132 bilhões em despesas; o SISAP processa uma folha de pagamento mensal superior a R$ 4,2 bilhões, que alcança mais de 640 mil servidores ativos e inativos; e o SIAD controla as compras e contratos de todas as pastas. São três sistemas que, juntos, formam a espinha dorsal operacional do Estado. (Fontes: LOA 2026/ALMG; folha de pagamento out/2025, Agência Minas.)**
+
 O problema é que, ainda hoje, milhares de servidoras e servidores operam esses sistemas manualmente, digitando tela a tela, dado por dado, dados que muitas vezes já existem prontos em planilhas. São horas de trabalho humano consumidas por tarefas repetitivas, horas que poderiam estar sendo dedicadas a planejar, analisar e, no fim da linha, atender melhor o cidadão.
 
 **A ideia é simples e poderosa: **uma plataforma aberta de automação, em software livre, que funciona como uma chave única capaz de abrir as três portas, SIAFI, SIAD e SISAP, e executar automaticamente as operações que hoje são feitas à mão. A plataforma é oferecida aos órgãos com fluxos prontos e crescentes; o órgão adota, usa com as próprias credenciais e seus próprios controles, e colhe o benefício imediato de liberar seus servidores para o que realmente importa.
@@ -101,6 +103,8 @@ O ciclo é curto e incremental. A prova de viabilidade já existe no SIAFI, cons
 ## 5.5. Grau de alcance (peso 2)
 
 Este é o critério em que a plataforma mais se destaca. Como SIAFI, SIAD e SISAP atravessam todas as Secretarias, autarquias e fundações, o alcance é o Estado inteiro. Em escala individual, são milhares de servidores das áreas de orçamento, finanças, compras, contratos, patrimônio e administração de pessoal. Indiretamente, alcança todos os cidadãos atendidos pelos serviços que esses sistemas viabilizam. Poucas ideias têm um alcance potencial tão amplo quanto uma plataforma que toca os três pilares operacionais do Estado.
+
+**[DADO PÚBLICO A VALIDAR] O Poder Executivo estadual conta com aproximadamente 377 mil servidores ativos, sendo a Educação a maior pasta, com mais de 255 mil. Ainda que apenas uma fração opere diretamente os sistemas estruturantes, trata-se de um universo de milhares de servidores nas áreas de orçamento, finanças, compras, patrimônio e gestão de pessoas, todos beneficiários potenciais da plataforma. (Fonte: Governo de MG, 2025.)**
 
 **[NOVO] E o alcance não é apenas potencial: já há tração concreta. Após a divulgação institucional da automação de descentralização de cotas, oito órgãos do Estado manifestaram interesse formal em adotá-la. Isso demonstra que existe demanda real e espontânea da Administração pela plataforma, e que a expansão proposta atende a uma necessidade já manifestada, não a uma hipótese.**
 
