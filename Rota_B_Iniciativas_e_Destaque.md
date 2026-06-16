@@ -192,13 +192,25 @@ A solução resolve problema real, recorrente e de alta relevância instituciona
 
 Em escala maior, a relevância se amplia: a operação de sistemas legados via terminal mainframe é dor estrutural compartilhada por dezenas de áreas do Estado de Minas Gerais e por inúmeras administrações públicas brasileiras. Oferecer uma solução técnica madura, aberta e replicável para esse problema gera valor que extrapola a SPLOR e o próprio Estado. Em termos estratégicos, a iniciativa reforça a soberania tecnológica do Estado em uma camada cada vez mais crítica da operação pública, a camada de automação, e posiciona Minas Gerais como referência em automação aberta de sistemas legados na Administração Pública brasileira.
 
-# 7. Origem e relação com o contexto institucional
+# 7. Equipe proponente
+
+A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplinar da SEPLAG, cuja complementaridade de competências foi decisiva para transformar uma necessidade real de trabalho em uma solução técnica robusta:
+
+**Guilherme de Melo Ferreira, **desenvolvedor principal da solução, responsável pela construção técnica da biblioteca e dos fluxos de automação.
+
+**Bruno Henrique de Oliveira Rosa, **servidor com domínio do negócio orçamentário e da operação do SIAFI, que atua como ponte entre a necessidade real da área e a solução, contribuindo também no desenvolvimento.
+
+**Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto, avaliando a viabilidade das ideias e orientando os melhores caminhos de implementação.
+
+É justamente a soma dessas três frentes, conhecimento do negócio, capacidade de desenvolvimento e assessoria de inteligência de dados, que dá solidez à iniciativa e sustenta sua continuidade.
+
+# 8. Origem e relação com o contexto institucional
 
 A iniciativa tem uma fagulha inicial honesta: o primeiro contato da equipe da SPLOR com o tema da automação se deu por um curso básico de Power Automate oferecido pela SEPLAG. Daí em diante, a trajetória foi inteiramente própria. Ao aplicar o Power Automate ao terminal PRODEMGE, a equipe esbarrou em suas limitações técnicas para sistemas legados e, por conta própria, pesquisou, projetou e desenvolveu a biblioteca em Python aqui apresentada, tecnicamente muito superior. A autoria, o desenvolvimento e a evolução da solução são da equipe da DCMEFO/SPLOR.
 
 A biblioteca proposta não compete com o Power Automate, nem com o programa Automatiza.MG. Compete com a operação manual em sistemas legados, esta sim, a verdadeira ineficiência que precisa ser superada. Power Automate continua sendo solução adequada para a vasta maioria dos casos cobertos pelo programa: fluxos pontuais, no ecossistema Microsoft moderno, construídos por servidores não técnicos. A presente iniciativa cobre o nicho complementar de sistemas legados estruturantes, em escala, com necessidade de governança formal, em que o RPA visual apresenta limitação técnica reconhecida.
 
-# 8. Próximos passos planejados
+# 9. Próximos passos planejados
 
 Com a institucionalização da iniciativa, planejam-se os seguintes desenvolvimentos:
 
