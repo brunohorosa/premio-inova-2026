@@ -150,11 +150,23 @@ Diferentemente de uma ideia puramente conceitual, esta proposta se apoia em uma 
 
 Em outras palavras: a parte mais difícil, provar que dá para automatizar com robustez o sistema mais crítico do Estado, já foi feita. A ideia agora é estender esse padrão comprovado ao SIAD e ao SISAP e institucionalizá-lo como plataforma aberta para todos os órgãos.
 
-# 8. Origem e relação com o contexto institucional
+# 8. Equipe proponente
+
+A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplinar da SEPLAG, cuja complementaridade de competências foi decisiva para transformar uma necessidade real de trabalho em uma solução técnica robusta:
+
+**Guilherme de Melo Ferreira, **desenvolvedor principal da solução, responsável pela construção técnica da biblioteca e dos fluxos de automação.
+
+**Bruno Henrique de Oliveira Rosa, **servidor com domínio do negócio orçamentário e da operação do SIAFI, que atua como ponte entre a necessidade real da área e a solução, contribuindo também no desenvolvimento.
+
+**Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto, avaliando a viabilidade das ideias e orientando os melhores caminhos de implementação.
+
+É justamente a soma dessas três frentes, conhecimento do negócio, capacidade de desenvolvimento e assessoria de inteligência de dados, que dá solidez à iniciativa e sustenta sua continuidade.
+
+# 9. Origem e relação com o contexto institucional
 
 A ideia tem uma fagulha inicial honesta: o contato da equipe da SPLOR com o tema da automação se deu a partir de um curso básico de Power Automate oferecido pela SEPLAG. Foi o ponto de partida. A partir dali, porém, a trajetória foi inteiramente própria: ao tentar aplicar o Power Automate ao terminal PRODEMGE, a equipe constatou as limitações técnicas dessa abordagem para sistemas legados e, por conta própria, pesquisou, desenhou e desenvolveu uma solução especializada e tecnicamente muito superior, a biblioteca em Python que fundamenta esta proposta. A autoria e a evolução da solução são da própria equipe da DCMEFO/SPLOR.
 
-# 9. Resultados esperados com a institucionalização
+# 10. Resultados esperados com a institucionalização
 
 - Devolução de milhares de horas de trabalho qualificado, hoje gastas em digitação, às atividades-fim de cada órgão, com benefício direto ao cidadão.
 
