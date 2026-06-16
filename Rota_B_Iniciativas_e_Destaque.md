@@ -4,11 +4,11 @@ Edital SEPLAG/SCPRH nº 01/2026
 
 **Categoria: Iniciativas Implementadas de Sucesso**
 
-+ Habilitação ao Destaque em Automatização e Inteligência Artificial
+> + Habilitação ao Destaque em Automatização e Inteligência Artificial
 
 **Biblioteca Python para Automação do Terminal PRODEMGE:**
 
-automação aberta, governada e auditável de sistemas legados do Estado (SIAFI, SIAD, SISAP)
+> automação aberta, governada e auditável de sistemas legados do Estado (SIAFI, SIAD, SISAP)
 
 # 1. Resumo da iniciativa
 
@@ -94,6 +94,14 @@ Antes da iniciativa, a operação manual não produzia registro estruturado: o s
 
 A construção do segundo fluxo (remanejamento de crédito) a partir do primeiro (cota orçamentária) validou empiricamente a tese de que a arquitetura é replicável com custo marginal decrescente. Funções como login, navegação por menus principais e finalização de documentos foram reaproveitadas sem qualquer modificação. O esforço de desenvolvimento do segundo fluxo foi significativamente menor que o do primeiro, indicando que cada novo fluxo subsequente exigirá ainda menos esforço.
 
+## 4.4. Validação pelo órgão piloto: o depoimento da PCMG
+
+A Polícia Civil de Minas Gerais (PCMG), primeiro órgão a adotar a automação de descentralização de cotas, avaliou formalmente a solução em produção. O resultado relatado é uma prova direta do valor gerado, na voz de quem usa.
+
+> Segundo a manifestação oficial da Diretoria de Planejamento e Orçamento do órgão, com a automação a equipe “passou a dedicar-se menos às rotinas de descentralizações” e mais “ao acompanhamento da execução dos contratos e despesas das unidades executoras, permitindo um controle mais próximo e qualificado dos recursos”.
+
+Esse relato confirma, pela perspectiva do cliente, o efeito central da iniciativa: a automação não apenas acelera tarefas, ela eleva a natureza do trabalho do servidor, que deixa a digitação repetitiva e passa ao controle qualificado dos recursos públicos. O órgão também registrou ganhos de agilidade, padronização e redução de falhas operacionais, e apontou uma evolução desejada, a geração automática de comprovantes de tela das descentralizações para controle interno, funcionalidade já em desenvolvimento pela equipe, evidenciando que a solução evolui em diálogo com quem a utiliza.
+
 # 5. Atendimento aos critérios da categoria principal
 
 A Categoria Iniciativas Implementadas de Sucesso é avaliada com base nos critérios 1 a 6 do subitem 7.3.2 do Edital. A seguir, cada um é abordado de forma direta.
@@ -117,6 +125,8 @@ A pessoa usuária imediata é a própria servidora ou servidor que opera os sist
 O valor entregue é tangível: horas de trabalho recuperadas, risco de erro virtualmente eliminado, segurança quanto ao resultado de cada operação. Em escala secundária, beneficia pessoas usuárias externas, fornecedores que recebem mais rápido, áreas finalísticas que veem suas demandas orçamentárias processadas com mais agilidade, e o cidadão, último beneficiário da maior eficiência do Estado.
 
 **[NOVO] O encadeamento de valor é direto: a automação libera o servidor da tarefa operacional, que passa a dedicar mais tempo à atividade-fim do órgão, e essa atividade-fim é, em última instância, o que chega ao cidadão. No caso da execução orçamentária, recurso que se move mais rápido e com menos erro significa serviços públicos executados no prazo e fornecedores pagos em dia.**
+
+**[NOVO] O ganho mais profundo, porém, não é o tempo, é a elevação da natureza do trabalho. Um servidor que passa o expediente digitando tela a tela não tem como analisar, conferir com profundidade, planejar ou propor melhorias. Liberado da tarefa mecânica, ele passa a exercer o trabalho que exige inteligência humana: acompanhar a execução, qualificar a informação, controlar melhor os recursos e abrir espaço para inovar. Não se trata de reduzir pessoas, e sim de reposicioná-las para atividades de maior valor, exatamente o que mede o indicador oficial de servidores reposicionados da política de automação do Estado. O efeito final é uma cadeia virtuosa: melhor uso do tempo gera informação de melhor qualidade, que gera controle mais próximo, que gera mais qualidade do gasto público e, no fim, mais valor ao cidadão. A manifestação da PCMG (seção 4.4) é a comprovação concreta dessa cadeia em funcionamento.**
 
 ## 5.4. Grau de agilidade na implantação (peso 2)
 
