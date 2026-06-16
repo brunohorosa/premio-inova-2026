@@ -10,6 +10,22 @@ Edital SEPLAG/SCPRH nº 01/2026
 
 > automação aberta, governada e auditável de sistemas legados do Estado (SIAFI, SIAD, SISAP)
 
+| Órgão proponente | Secretaria de Estado de Planejamento e Gestão (SEPLAG), Superintendência Central de Planejamento Orçamentário (SPLOR) |
+
+| --- | --- |
+
+| Sistema operado | SIAFI/MG (em operação), modelo replicável para SIAD, SISAP e demais sistemas do terminal PRODEMGE |
+
+| Tecnologia | Python + biblioteca py3270 + emulador x3270/s3270 (100% software livre) |
+
+| Estágio | Implementado e em produção: dois fluxos operacionais (aprovação/anulação de cota e remanejamento de crédito) |
+
+| Repositórios | github.com/splor-mg/siafi-automacao-cota e github.com/splor-mg/siafi-automacao-credito |
+
+| Eligibilidade ao Destaque | Sim, uso intensivo e estrutural de automatização de processos |
+
+
+
 # 1. Resumo da iniciativa
 
 Esta iniciativa apresenta uma biblioteca Python para automação programática do terminal TN3270 da PRODEMGE, desenvolvida e implementada na Superintendência Central de Planejamento Orçamentário (SPLOR/SEPLAG) e atualmente em produção com múltiplos fluxos aplicados ao SIAFI/MG, entre eles aprovação e anulação de cotas, remanejamento de crédito e descentralização de cotas para Unidades Executoras. A iniciativa demonstra, em escala real, uma abordagem técnica complementar à do programa Automatiza.MG, especializada para o cenário específico de sistemas legados, em que o RPA visual baseado em captura de tela apresenta limitações estruturais.
@@ -21,6 +37,32 @@ Esta iniciativa apresenta uma biblioteca Python para automação programática d
 O resultado mensurado é direto e comprovado em teste real: um lote de 50 operações que consumia cerca de 1h17min de digitação manual passou a ser executado em 28 segundos pela biblioteca, redução superior a 97%, com eliminação virtual de erros. A iniciativa cobre hoje o ciclo de movimentação orçamentária da diretoria (aprovação, remanejamento, descentralização, alterações e minutas de decreto) e já foi validada externamente pela PCMG, com oito órgãos demandando sua adoção.
 
 A iniciativa é apresentada também à categoria Destaque em Automatização e Inteligência Artificial por preencher integralmente seus requisitos: trata-se de uso estrutural, não meramente demonstrativo, de automatização de processos em larga escala, com governança formal (versionamento em Git institucional, padrão de credenciais por variáveis de ambiente, revisão por pares), conformidade com a LGPD e arquitetura desenhada para replicabilidade e sustentabilidade de longo prazo.
+
+**Quadro-resumo da iniciativa**
+
+| Indicador | Resultado comprovado |
+
+| --- | --- |
+
+| Ganho de velocidade (teste de 50 operações) | de ~1h17min (manual) para 28 segundos (Python) |
+
+| Comparação com Power Automate | ~30x mais rápido, mesma máquina e sistema |
+
+| Redução de tempo | superior a 97% |
+
+| Produção real (um mês, só remanejamento) | 109 documentos SIAFI; 257 linhas de alteração |
+
+| Recursos alocados pela automação | ~R$ 1,72 bilhão suplementado |
+
+| Unidades orçamentárias atendidas | 29 |
+
+| Erros de lançamento | zero |
+
+| Validação externa | PCMG (piloto) + oito órgãos com interesse formalizado |
+
+| Custo de licenças | zero (software livre) |
+
+
 
 # 2. O problema enfrentado
 
