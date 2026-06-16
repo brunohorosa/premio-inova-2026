@@ -62,6 +62,8 @@ Esta é a essência da proposta. Automatizar um sistema legado pode parecer, à 
 
 Cada hora que um servidor deixa de gastar digitando é uma hora devolvida à missão do órgão. E como SIAFI, SIAD e SISAP atravessam o Estado inteiro, esse ganho se espalha por todas as áreas que tocam a vida das pessoas. Alguns exemplos do potencial, ilustrativos do alcance da plataforma quando adotada por cada área:
 
+**[NOVO] A dimensão desse ganho já é mensurável onde a plataforma foi provada. No SIAFI, um lote de 50 operações que levava cerca de 1 hora e 17 minutos para ser digitado manualmente passou a ser concluído em 28 segundos pela automação. Cada lote assim libera mais de uma hora de trabalho qualificado, que volta para a atividade-fim do órgão. Multiplicado por todas as equipes, todos os meses, em todos os sistemas, o tempo devolvido ao serviço público, e ao cidadão, é de enorme magnitude.**
+
 **Saúde. **A equipe de orçamento da Secretaria de Saúde, liberada da digitação de descentralizações e remanejamentos no SIAFI, dedica mais tempo a garantir que os recursos cheguem aos hospitais e às unidades de atendimento com agilidade. Recurso que anda mais rápido é leito, medicamento e exame que chegam antes ao paciente.
 
 **Educação. **A equipe de compras automatiza no SIAD os processos de aquisição, e acelera a chegada de material escolar, merenda e insumos às escolas. Menos tempo no sistema é mais tempo garantindo que a escola tenha o que precisa no início do ano letivo.
@@ -100,6 +102,8 @@ O ciclo é curto e incremental. A prova de viabilidade já existe no SIAFI, cons
 
 Este é o critério em que a plataforma mais se destaca. Como SIAFI, SIAD e SISAP atravessam todas as Secretarias, autarquias e fundações, o alcance é o Estado inteiro. Em escala individual, são milhares de servidores das áreas de orçamento, finanças, compras, contratos, patrimônio e administração de pessoal. Indiretamente, alcança todos os cidadãos atendidos pelos serviços que esses sistemas viabilizam. Poucas ideias têm um alcance potencial tão amplo quanto uma plataforma que toca os três pilares operacionais do Estado.
 
+**[NOVO] E o alcance não é apenas potencial: já há tração concreta. Após a divulgação institucional da automação de descentralização de cotas, oito órgãos do Estado manifestaram interesse formal em adotá-la. Isso demonstra que existe demanda real e espontânea da Administração pela plataforma, e que a expansão proposta atende a uma necessidade já manifestada, não a uma hipótese.**
+
 ## 5.6. Capacidade de multiplicação (peso 1)
 
 A solução é multiplicável por desenho. Por ser software livre, qualquer órgão adota o núcleo sem adaptação e sem custo. O catálogo de fluxos cresce de forma colaborativa: cada fluxo construído por um órgão fica disponível para todos. O custo marginal de cada nova automação é decrescente. E a multiplicação ultrapassa o Executivo estadual: outros Poderes, Municípios e demais estados que operam terminais TN3270, situação ainda comum no Brasil, podem adotar a plataforma sem custo. Minas passa a exportar tecnologia pública.
@@ -128,7 +132,7 @@ A plataforma funciona em qualquer Linux moderno (gratuito) ou no Windows via WSL
 
 ## 6.3. Estável e rápida, comprovado em teste real
 
-Por conversar diretamente com o protocolo do sistema, em vez de "olhar" a tela como imagem, a automação é muito mais fluida e o próprio sistema responde de forma mais estável. Isso não é teoria: em teste comparativo real, um mesmo lote de 50 operações no SIAFI foi executado em cerca de 28 segundos na abordagem proposta, contra quase 14 minutos no RPA visual, na mesma máquina e no mesmo sistema. A diferença de estabilidade e velocidade é estrutural, e favorece o cumprimento de prazos legais críticos.
+Por conversar diretamente com o protocolo do sistema, em vez de "olhar" a tela como imagem, a automação é muito mais fluida e o próprio sistema responde de forma mais estável. Isso não é teoria: em teste comparativo real, um mesmo lote de 50 operações no SIAFI foi executado em cerca de 28 segundos na abordagem proposta, contra 13 minutos e 53 segundos no RPA visual, na mesma máquina e no mesmo sistema. A diferença de estabilidade e velocidade é estrutural, e favorece o cumprimento de prazos legais críticos.
 
 # 7. Por que esta ideia é confiável: a prova já existe
 
@@ -147,6 +151,8 @@ A ideia tem origem na cultura de automação aberta pelo programa Automatiza.MG.
 # 9. Resultados esperados com a institucionalização
 
 - Devolução de milhares de horas de trabalho qualificado, hoje gastas em digitação, às atividades-fim de cada órgão, com benefício direto ao cidadão.
+
+- Ampliação do indicador de servidores reposicionados, métrica oficial da política de automação do Estado, ao levar a automação aos três sistemas estruturantes mais críticos do Executivo.
 
 - Redução do risco em operações financeiras e administrativas críticas pela eliminação de erros de digitação.
 
