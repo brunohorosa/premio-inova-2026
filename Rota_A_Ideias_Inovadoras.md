@@ -106,7 +106,9 @@ Este é o critério em que a plataforma mais se destaca. Como SIAFI, SIAD e SISA
 
 **[DADO PÚBLICO A VALIDAR] O Poder Executivo estadual conta com aproximadamente 377 mil servidores ativos, sendo a Educação a maior pasta, com mais de 255 mil. Ainda que apenas uma fração opere diretamente os sistemas estruturantes, trata-se de um universo de milhares de servidores nas áreas de orçamento, finanças, compras, patrimônio e gestão de pessoas, todos beneficiários potenciais da plataforma. (Fonte: Governo de MG, 2025.)**
 
-**[NOVO] E o alcance não é apenas potencial: já há tração concreta. Após a divulgação institucional da automação de descentralização de cotas, oito órgãos do Estado manifestaram interesse formal em adotá-la. Isso demonstra que existe demanda real e espontânea da Administração pela plataforma, e que a expansão proposta atende a uma necessidade já manifestada, não a uma hipótese.**
+**[NOVO] E o alcance não é apenas potencial: já há tração concreta e multissetorial. Após a divulgação institucional da automação de descentralização de cotas, oito órgãos manifestaram interesse formal em adotá-la, com forte concentração na segurança pública, Polícia Civil (PCMG), Polícia Militar (PMMG), Corpo de Bombeiros Militar (CBMMG), Gabinete Militar do Governador (GMG) e Secretaria de Justiça e Segurança Pública (SEJUSP), além do Fundo Estadual de Saúde (FES) e da Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH). A Polícia Civil já está com a solução implantada. Que órgãos tão diversos busquem espontaneamente a mesma solução demonstra que a demanda por uma plataforma de automação dos sistemas estruturantes é real e transversal a todo o Estado.**
+
+**[A CONFIRMAR] O interesse alcançou inclusive um município, a Prefeitura de Brumadinho, sinalizando que o potencial de replicação ultrapassa o Executivo estadual e pode alcançar outras esferas de governo. (Contato em andamento.)**
 
 ## 5.6. Capacidade de multiplicação (peso 1)
 
