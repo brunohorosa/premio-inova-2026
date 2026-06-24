@@ -10,22 +10,6 @@ Edital SEPLAG/SCPRH nº 01/2026
 
 > automação aberta, governada e auditável de sistemas legados do Estado (SIAFI, SIAD, SISAP)
 
-| Órgão proponente | Secretaria de Estado de Planejamento e Gestão (SEPLAG), Superintendência Central de Planejamento Orçamentário (SPLOR) |
-
-| --- | --- |
-
-| Sistema operado | SIAFI/MG (em operação), modelo replicável para SIAD, SISAP e demais sistemas do terminal PRODEMGE |
-
-| Tecnologia | Python + biblioteca py3270 + emulador x3270/s3270 (100% software livre) |
-
-| Estágio | Implementado e em produção: dois fluxos operacionais (aprovação/anulação de cota e remanejamento de crédito) |
-
-| Repositórios | github.com/splor-mg/siafi-automacao-cota e github.com/splor-mg/siafi-automacao-credito |
-
-| Eligibilidade ao Destaque | Sim, uso intensivo e estrutural de automatização de processos |
-
-
-
 # 1. Resumo da iniciativa
 
 Esta iniciativa apresenta uma biblioteca Python para automação programática do terminal TN3270 da PRODEMGE, desenvolvida e implementada na Superintendência Central de Planejamento Orçamentário (SPLOR/SEPLAG) e atualmente em produção com múltiplos fluxos aplicados ao SIAFI/MG, entre eles aprovação e anulação de cotas, remanejamento de crédito e descentralização de cotas para Unidades Executoras. A iniciativa demonstra, em escala real, uma abordagem técnica complementar à do programa Automatiza.MG, especializada para o cenário específico de sistemas legados, em que o RPA visual baseado em captura de tela apresenta limitações estruturais.
@@ -39,30 +23,6 @@ O resultado mensurado é direto e comprovado em teste real: um lote de 50 opera�
 A iniciativa é apresentada também à categoria Destaque em Automatização e Inteligência Artificial por preencher integralmente seus requisitos: trata-se de uso estrutural, não meramente demonstrativo, de automatização de processos em larga escala, com governança formal (versionamento em Git institucional, padrão de credenciais por variáveis de ambiente, revisão por pares), conformidade com a LGPD e arquitetura desenhada para replicabilidade e sustentabilidade de longo prazo.
 
 **Quadro-resumo da iniciativa**
-
-| Indicador | Resultado comprovado |
-
-| --- | --- |
-
-| Ganho de velocidade (teste de 50 operações) | de ~1h17min (manual) para 28 segundos (Python) |
-
-| Comparação com Power Automate | ~30x mais rápido, mesma máquina e sistema |
-
-| Redução de tempo | superior a 97% |
-
-| Produção real (um mês, só remanejamento) | 109 documentos SIAFI; 257 linhas de alteração |
-
-| Recursos alocados pela automação | ~R$ 1,72 bilhão suplementado |
-
-| Unidades orçamentárias atendidas | 29 |
-
-| Erros de lançamento | zero |
-
-| Validação externa | PCMG (piloto) + oito órgãos com interesse formalizado |
-
-| Custo de licenças | zero (software livre) |
-
-
 
 # 2. O problema enfrentado
 
@@ -206,7 +166,7 @@ O alcance se torna especialmente expressivo quando se considera processos como a
 
 **[NOVO] O fluxo de descentralização orçamentária inclui ainda uma etapa de consolidação automática, que reúne múltiplas planilhas, por exemplo, de diferentes unidades de um mesmo órgão, em um único lote de processamento antes de acionar a automação no SIAFI, demonstrando que a arquitetura já opera em escala acima de um único usuário ou unidade.**
 
-**[NOVO] A demanda externa já é concreta. Após a divulgação institucional da iniciativa, oito órgãos manifestaram interesse formal em adotar a automação de descentralização de cotas, com concentração expressiva na área de segurança pública: Polícia Civil (PCMG), Polícia Militar (PMMG), Corpo de Bombeiros Militar (CBMMG), Gabinete Militar do Governador (GMG) e Secretaria de Justiça e Segurança Pública (SEJUSP). Somam-se a eles o Fundo Estadual de Saúde (FES) e a Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH). A Polícia Civil, primeiro órgão piloto, já está com a solução implantada. A versão inicialmente divulgada foi construída em Power Automate e serviu como laboratório; a partir desse aprendizado, a solução evoluiu para a implementação em Python aqui apresentada, que a substituiu, e é essa versão que será disponibilizada aos órgãos. A procura espontânea e multissetorial demonstra que o alcance não é hipótese: é demanda real batendo à porta.**
+**[NOVO] A demanda externa já é concreta. Após a divulgação institucional da iniciativa, doze órgãos manifestaram interesse formal em adotar a automação de descentralização de cotas, com concentração expressiva na área de segurança pública: Polícia Civil (PCMG), Polícia Militar (PMMG), Corpo de Bombeiros Militar (CBMMG), Gabinete Militar do Governador (GMG) e Secretaria de Justiça e Segurança Pública (SEJUSP). Somam-se a eles o Fundo Estadual de Saúde (FES) e a Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH). A Polícia Civil, primeiro órgão piloto, já está com a solução implantada. A versão inicialmente divulgada foi construída em Power Automate e serviu como laboratório; a partir desse aprendizado, a solução evoluiu para a implementação em Python aqui apresentada, que a substituiu, e é essa versão que será disponibilizada aos órgãos. A procura espontânea e multissetorial demonstra que o alcance não é hipótese: é demanda real batendo à porta.**
 
 **[A CONFIRMAR] O interesse alcançou inclusive a esfera municipal: a Prefeitura de Brumadinho procurou a equipe, evidenciando que o potencial de replicação da solução ultrapassa o Executivo estadual. (Contato em andamento para detalhamento.)**
 
