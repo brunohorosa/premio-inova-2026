@@ -1,213 +1,166 @@
-**9º PRÊMIO INOVA MINAS GERAIS**
-
+# 9º PRÊMIO INOVA MINAS GERAIS
 **Edital SEPLAG/SCPRH nº 01/2026**
-
 **Categoria: Ideias Inovadoras Implementáveis**
 
-**Plataforma Aberta de Automação dos Sistemas Estruturantes do Estado**
+---
 
-**uma chave única, em software livre, para devolver ao cidadão o tempo que hoje se perde digitando no SIAFI, SIAD e SISAP**
+# Automação Python dos Sistemas TN3270 do Estado
 
-# 1. Resumo da ideia
+> *Uma biblioteca de código aberto que permite a qualquer equipe técnica da Administração Pública mineira automatizar tarefas no SIAFI, no SIAD e no SISAP — os três sistemas estruturantes do Estado.*
 
-O Estado de Minas Gerais inteiro funciona sobre três sistemas estruturantes hospedados no terminal PRODEMGE: o SIAFI, que move o dinheiro público; o SIAD, que cuida das compras, contratos e patrimônio; e o SISAP, que administra as pessoas, da folha de pagamento às aposentadorias. Não há secretaria que escape deles. Saúde, Educação, Segurança Pública, Fazenda, Meio Ambiente, todas dependem desses três sistemas para funcionar no dia a dia.
+---
 
-**[DADO PÚBLICO A VALIDAR] Para dimensionar o que está em jogo: o SIAFI executa um orçamento estadual que, em 2026, soma R$ 132 bilhões em despesas; o SISAP processa uma folha de pagamento mensal superior a R$ 4,2 bilhões, que alcança mais de 640 mil servidores ativos e inativos; e o SIAD controla as compras e contratos de todas as pastas. São três sistemas que, juntos, formam a espinha dorsal operacional do Estado. (Fontes: LOA 2026/ALMG; folha de pagamento out/2025, Agência Minas.)**
+## 1. O cenário: três sistemas, quase nenhuma automação
 
-O problema é que, ainda hoje, milhares de servidoras e servidores operam esses sistemas manualmente, digitando tela a tela, dado por dado, dados que muitas vezes já existem prontos em planilhas. São horas de trabalho humano consumidas por tarefas repetitivas, horas que poderiam estar sendo dedicadas a planejar, analisar e, no fim da linha, atender melhor o cidadão.
+O Estado de Minas Gerais inteiro funciona sobre três sistemas hospedados no terminal PRODEMGE: o SIAFI, que executa a despesa pública; o SIAD, que cuida das compras, contratos e patrimônio; e o SISAP, que administra as pessoas, da folha de pagamento às aposentadorias. Não há secretaria que escape deles. Saúde, Educação, Segurança Pública, Fazenda — todas dependem desses três sistemas para funcionar no dia a dia.
 
-**A ideia é simples e poderosa: **uma plataforma aberta de automação, em software livre, que funciona como uma chave única capaz de abrir as três portas, SIAFI, SIAD e SISAP, e executar automaticamente as operações que hoje são feitas à mão. A plataforma é oferecida aos órgãos com fluxos prontos e crescentes; o órgão adota, usa com as próprias credenciais e seus próprios controles, e colhe o benefício imediato de liberar seus servidores para o que realmente importa.
+A realidade operacional é direta: a quase totalidade dos servidores que operam esses sistemas o faz de forma manual. Tela a tela, campo a campo, digitando informações que muitas vezes já existem organizadas em planilhas. Uma parcela menor já utiliza automação via RPA visual. O trabalho manual é lento, exposto a erros e não deixa rastro estruturado: ao final de um lote de operações, o servidor tem apenas a memória das telas que viu.
 
-A viabilidade dessa ideia não é teórica. Ela já foi comprovada no sistema mais crítico dos três, o SIAFI, onde a equipe da SPLOR/SEPLAG colocou em produção fluxos reais de automação orçamentária, validados inclusive por um órgão externo, a Polícia Civil de Minas Gerais. O que se propõe agora é transformar essa prova de conceito em uma plataforma institucional que cobre os três sistemas e fica disponível para todo o Estado.
+Esse cenário não é trivial de mudar. SIAFI, SIAD e SISAP são sistemas legados, acessados pelo protocolo TN3270 do mainframe — um protocolo robusto e maduro, mas que cria uma barreira técnica específica para quem quer automatizar: as ferramentas de automação mais conhecidas e acessíveis não foram projetadas para esse ambiente. Aplicá-las ao terminal exige adaptações e contorna limitações que raramente são superadas com estabilidade.
 
-# 2. O problema que se pretende resolver
+O resultado é um paradoxo: três sistemas que movimentam o dinheiro, as compras e as pessoas de todo o Estado, operados manualmente por milhares de servidores, enquanto a tecnologia para automatizá-los de forma robusta existe há décadas e nunca foi tornada amplamente acessível no setor público estadual.
 
-Apesar de toda a transformação digital dos últimos anos, o núcleo da operação do Estado ainda depende de sistemas legados acessados por terminal TN3270. São sistemas robustos e confiáveis, mas que só aceitam operação manual, tela a tela. Três problemas estruturais convivem nesse cenário.
+---
 
-## 2.1. Tempo de servidor desperdiçado em escala estadual
+## 2. A ideia: uma ferramenta, não um produto pronto
 
-Cada operação exige digitação manual de informações que, em geral, já estão organizadas em planilhas ou outros sistemas. Multiplicado por milhares de servidores, por todos os órgãos, ao longo de todo o ano, isso representa um volume gigantesco de horas de trabalho qualificado gastas em tarefa mecânica. É tempo que não volta, e que poderia estar sendo usado em análise, planejamento e atendimento.
+A proposta é simples e direta: **apresentar e institucionalizar uma biblioteca Python de código aberto que interage com o terminal TN3270 via protocolo nativo**, tornando-a disponível e documentada para que qualquer equipe técnica da Administração estadual possa construir suas próprias automações.
 
-**[NOVO] O custo não é apenas de tempo. Na lógica contemporânea do orçamento por desempenho, em que importa a relação entre recursos alocados e resultados entregues à sociedade, cada hora de servidor presa à digitação é uma hora subtraída da análise que qualifica o gasto público.**
+É importante distinguir o que esta proposta é e o que não é.
 
-## 2.2. As ferramentas atuais não foram feitas para esses sistemas
+**O que é:** uma ferramenta — uma biblioteca que resolve o problema de acesso ao protocolo TN3270 e permite que o programador escreva, em Python, o que a automação deve fazer. Com ela, a equipe técnica de um órgão pode criar um script que preenche um empenho, gera um remanejamento ou consulta um saldo, automaticamente, a partir de uma planilha de dados.
 
-A ferramenta de automação hoje disponível no Estado, baseada em RPA visual (Power Automate Desktop), é excelente para o ecossistema Microsoft moderno, mas opera no limite quando aplicada ao terminal legado: por não conhecer o protocolo do mainframe, ela trata a tela como uma imagem, simula cliques e captura telas como foto. Qualquer mudança de resolução, posição de janela ou atualização quebra a automação. É uma solução frágil para sistemas tão críticos.
+**O que não é:** um catálogo de fluxos prontos para distribuir. Não existe um pacote que o órgão instala e passa a usar sem nenhuma construção. Cada automação precisa ser desenvolvida pela equipe técnica do próprio órgão, para as tarefas específicas que esse órgão realiza. A biblioteca oferece a fundação; o que se constrói sobre ela depende de quem a usa.
 
-## 2.3. Custo, dependência e falta de rastreabilidade
+Essa distinção é fundamental para a honestidade da proposta: ela requer equipe técnica, ela requer Python, ela requer esforço de desenvolvimento. O que ela elimina é a barreira que hoje impede que essa possibilidade sequer exista — a dificuldade de comunicar com o protocolo do terminal.
 
-Soluções proprietárias têm custo de licença que cresce com o uso, exigem computadores dedicados, dependem de um único fornecedor e não guardam histórico auditável das operações. Para uma camada cada vez mais estratégica da máquina pública, isso significa custo recorrente, dependência tecnológica e baixa transparência.
+---
 
-# 3. A ideia proposta
+## 3. Como a ferramenta funciona
 
-A proposta é desenvolver e institucionalizar uma Plataforma Aberta de Automação dos Sistemas Estruturantes, organizada de modo que o órgão receba valor desde o primeiro dia, sem precisar de conhecimento técnico para começar.
+No núcleo técnico da solução está a biblioteca **py3270**, interface Python para o emulador **x3270/s3270** — ferramentas de código aberto mantidas pela comunidade há mais de duas décadas e amplamente utilizadas em instituições internacionais que operam mainframes em escala.
 
-## 3.1. Uma chave que abre as três portas
+Em termos práticos, quando um script Python usa essa biblioteca para automação:
+- Conecta-se ao terminal TN3270 da PRODEMGE pelo protocolo nativo
+- Identifica em qual campo da tela do mainframe está, por coordenadas reais de linha e coluna
+- Lê e escreve dados diretamente nessas posições
+- Envia comandos nativos do mainframe (Enter, F3, F5, F8, entre outros)
+- Captura, em texto, o retorno exato que o sistema exibe
 
-No coração da plataforma está uma biblioteca em Python que conversa diretamente com o protocolo do terminal PRODEMGE, a mesma linguagem nativa que o sistema entende. Por ser uma camada de base comum, essa mesma biblioteca serve para SIAFI, SIAD e SISAP, e para qualquer outro sistema do mesmo terminal. É a chave única: resolvido o acesso ao terminal, abre-se o caminho para automatizar qualquer um dos três sistemas que sustentam o Estado.
+Não há simulação visual. Não há captura de imagem. Não há reconhecimento de pixel. A automação fala com o mainframe pela mesma linguagem que o mainframe entende, o que resulta em uma interação estável e previsível — o sistema responde ao protocolo da mesma forma que responderia a um operador humano no terminal.
 
-## 3.2. Fluxos prontos como porta de entrada
+Uma consequência técnica importante: como o emulador usado (s3270) opera em modo texto, sem interface gráfica, a automação roda em segundo plano sem capturar mouse, teclado ou tela. O servidor que disparou a execução pode continuar trabalhando normalmente no mesmo computador enquanto a automação processa — sem travar a máquina, sem ocupar a tela.
 
-O órgão não precisa programar nada para começar. A plataforma oferece um catálogo de fluxos prontos, automações já construídas para as operações mais comuns, que o órgão simplesmente adota: preenche uma planilha padronizada com os dados que já usa, executa, e a automação faz o resto, com suas credenciais e sob seu controle. Conforme o catálogo cresce, mais operações ficam disponíveis para todos. Montar um fluxo novo e próprio existe como possibilidade para os órgãos que quiserem ir além, mas é o estágio avançado, não a porta de entrada.
+---
 
-## 3.3. Cada órgão no controle do que é seu
+## 4. A prova de que funciona: o que a SPLOR/SEPLAG já fez com ela
 
-A plataforma preserva integralmente a autonomia e a segurança de cada órgão. As credenciais usadas são as mesmas que o servidor já possui para operar o sistema manualmente, nada de novo acesso, nada de senha centralizada. Cada órgão opera seus próprios dados, suas próprias rotinas, seus próprios controles. A SEPLAG governa o padrão, mantém a biblioteca e dissemina, mas não opera no lugar de ninguém.
+A biblioteca não é proposta teórica. A equipe proponente a utiliza em produção real, no SIAFI/MG, desde maio de 2024. Foram desenvolvidos três fluxos completos, em uso contínuo na DCMEFO/SPLOR:
 
-## 3.4. Governança e transparência desde a base
+**Aprovação e anulação de cota orçamentária:** o script lê uma planilha com as operações do mês, acessa o SIAFI, navega até a transação correspondente, preenche os campos (mês, fonte, UO, grupo de despesa, ação, valor), executa e registra o retorno linha a linha — número do documento gerado, sucesso ou código de erro específico.
 
-Todo o código vive em repositórios versionados, com histórico auditável. Cada execução gera registro estruturado do que foi feito, trilha de auditoria que praticamente não existe na operação manual. Por ser software livre, qualquer servidor com perfil técnico pode inspecionar exatamente o que a automação faz, não há caixa-preta. E a documentação é escrita em linguagem simples, pensada para quem não é da área técnica.
+**Remanejamento de crédito:** segue o mesmo padrão arquitetural, com um módulo adicional de análise prévia de saldo que verifica disponibilidade antes de cada operação, evitando falhas em produção.
 
-# 4. O valor que chega ao cidadão
+**Descentralização de cota para Unidades Executoras:** fluxo com empacotamento mais maduro — instalador automatizado, consolidação de múltiplas planilhas em lote e tradução dos retornos do SIAFI para mensagens em português claro. Validado em ambiente real com a Polícia Civil de Minas Gerais como órgão piloto.
 
-Esta é a essência da proposta. Automatizar um sistema legado pode parecer, à primeira vista, um ganho apenas técnico, interno. Mas o encadeamento é direto e real:
+Os resultados desses fluxos em produção são verificáveis. Somente no fluxo de remanejamento, em menos de um mês de operação (19/05 a 16/06/2026), foram gerados 109 documentos no SIAFI, processadas 257 alterações orçamentárias e alocados cerca de R$ 1,72 bilhão em recursos, atendendo 29 unidades orçamentárias, com zero erros de lançamento.
 
-**automação → servidor liberado da tarefa operacional → mais tempo para a atividade-fim → cidadão melhor atendido.**
+Para dar a dimensão do ganho em termos de tempo: um lote de 50 operações de remanejamento que consumia cerca de uma hora e dezessete minutos de digitação manual passou a ser concluído em 28 segundos pela automação. Não é uma estimativa: é um resultado medido em teste real, na mesma máquina e no mesmo sistema em produção.
 
-Cada hora que um servidor deixa de gastar digitando é uma hora devolvida à missão do órgão. E como SIAFI, SIAD e SISAP atravessam o Estado inteiro, esse ganho se espalha por todas as áreas que tocam a vida das pessoas. Alguns exemplos do potencial, ilustrativos do alcance da plataforma quando adotada por cada área:
+Esses dados não são o produto desta proposta — são a prova de que a ferramenta funciona. O que a proposta apresenta é a ideia de tornar essa ferramenta e esse aprendizado acessíveis a todo o Estado.
 
-**[NOVO] A dimensão desse ganho já é mensurável onde a plataforma foi provada. No SIAFI, um lote de 50 operações que levava cerca de 1 hora e 17 minutos para ser digitado manualmente passou a ser concluído em 28 segundos pela automação. Cada lote assim libera mais de uma hora de trabalho qualificado, que volta para a atividade-fim do órgão. Multiplicado por todas as equipes, todos os meses, em todos os sistemas, o tempo devolvido ao serviço público, e ao cidadão, é de enorme magnitude.**
+---
 
-**Saúde. **A equipe de orçamento da Secretaria de Saúde, liberada da digitação de descentralizações e remanejamentos no SIAFI, dedica mais tempo a garantir que os recursos cheguem aos hospitais e às unidades de atendimento com agilidade. Recurso que anda mais rápido é leito, medicamento e exame que chegam antes ao paciente.
+## 5. O que a institucionalização proposta engloba
 
-**Educação. **A equipe de compras automatiza no SIAD os processos de aquisição, e acelera a chegada de material escolar, merenda e insumos às escolas. Menos tempo no sistema é mais tempo garantindo que a escola tenha o que precisa no início do ano letivo.
+Ter a biblioteca desenvolvida e funcionando em um órgão não é suficiente para que outros órgãos possam adotá-la. A barreira de entrada existe: requer Python, requer familiaridade com o conceito de protocolo de terminal, requer configuração de ambiente Linux ou WSL. A proposta de institucionalização tem como objetivo central reduzir essa barreira.
 
-**Segurança Pública. **As equipes de RH automatizam no SISAP as movimentações funcionais de militares e policiais, promoções, progressões, férias, e devolvem agilidade à vida funcional de quem está na ponta protegendo o cidadão, reduzindo atrasos que hoje desgastam a tropa.
+Os componentes concretos:
 
-**Fazenda e Meio Ambiente. **Equipes financeiras e administrativas de todas as pastas ganham execução orçamentária mais rápida e precisa, o que se traduz em pagamentos a fornecedores em dia, contratos executados no prazo e maior capacidade de resposta do Estado, especialmente em situações extraordinárias como calamidades ambientais.
+**Documentação técnica em português:** a biblioteca existe com documentação voltada ao contexto corporativo internacional. Para o servidor público estadual, é necessário um material em português que explique o que é o protocolo TN3270, como configurar o ambiente, como estruturar um script básico e como interpretar os retornos do sistema. Esse material não existe hoje de forma organizada e acessível.
 
-O ponto comum é claro: a plataforma não substitui o servidor, ela o liberta da parte mecânica do trabalho para que ele se dedique ao que exige inteligência humana, e que beneficia diretamente o cidadão. O alcance real dependerá de cada órgão adotar e aproveitar a plataforma, mas o caminho fica aberto para todos.
+**Guia de primeiros passos:** um roteiro prático para que uma equipe técnica com Python básico consiga escrever sua primeira automação simples em um dos três sistemas. A experiência da equipe proponente mostrou que os primeiros obstáculos — conexão com o terminal, navegação inicial, leitura do retorno — são os mais difíceis. Um guia que já resolveu esses obstáculos reduz semanas de tentativa e erro.
 
-**[NOVO] Esse benefício, aliás, já é reconhecido e medido pelo próprio Estado. Entre os indicadores oficiais de sucesso da política de automação mineira está o número de servidores reposicionados, pessoas que deixaram de executar tarefa repetitiva e passaram a atuar em atividades de maior valor. A plataforma proposta foi desenhada para ampliar exatamente esse indicador, levando-o aos sistemas estruturantes mais críticos e, com isso, a todas as áreas do Estado que servem diretamente ao cidadão. É uma diretriz de gestão que orienta o trabalho da equipe proponente: pensar primeiro no órgão atendido e em quem ele serve.**
+**Repositório público com exemplos e fluxos:** o repositório já existe (organização splor-mg no GitHub), com os fluxos da SPLOR como referência. A proposta é formalizá-lo como espaço institucional de compartilhamento, onde outros órgãos possam contribuir com os fluxos que desenvolverem. Cada contribuição amplia o valor disponível para todos.
 
-**[NOVO] É importante o que esse reposicionamento significa de fato. Não se trata de reduzir o quadro de pessoal, e sim de elevar a natureza do trabalho: o servidor deixa a digitação repetitiva e passa a analisar, conferir, planejar e inovar. Disso nasce uma cadeia de valor mais ampla, melhor uso do tempo gera informação de melhor qualidade, que permite controle mais próximo dos recursos, que resulta em mais qualidade do gasto público. Essa cadeia não é hipótese: o órgão piloto, a Polícia Civil, relatou oficialmente que, com a automação, sua equipe passou a dedicar menos tempo às rotinas de digitação e mais ao acompanhamento qualificado da execução de contratos e despesas. Em escala estadual, essa transformação do trabalho do servidor é, talvez, o maior valor público que a plataforma pode gerar.**
+**Suporte inicial:** a equipe proponente pode oferecer suporte técnico inicial aos primeiros órgãos que queiram adotar a ferramenta, reduzindo ainda mais a barreira de entrada.
 
-**[NOVO] Esse encadeamento conecta-se a um conceito central da gestão pública moderna: a passagem do mero controle do gasto para a lógica do desempenho, em que importa a relação entre os recursos alocados e os resultados entregues à sociedade. Liberar o servidor para o trabalho analítico é condição para qualificar a decisão orçamentária e, com ela, a qualidade do gasto público.**
+---
 
-**[NOVO] Esse propósito, vale registrar, acompanha a iniciativa desde a concepção, em 2024, sempre documentado como a finalidade central da automação. Não é um argumento construído para esta proposta: é a linha que orienta o trabalho da equipe desde o início.**
+## 6. Requisitos e desafios honestos
 
-**[NOVO] Tudo isso dialoga com a lógica do orçamento por desempenho, que desloca o foco do mero controle do gasto para a relação entre recursos alocados e resultados entregues à sociedade: qualificar o tempo do servidor é condição para qualificar a decisão orçamentária e a qualidade do gasto público.**
+Esta proposta não esconde seus requisitos. Eles são reais e precisam ser ditos com clareza.
 
-# 5. Atendimento aos critérios de avaliação
+**Requer conhecimento em Python.** Não é necessário ser especialista — conhecimento básico de lógica de programação e Python é suficiente para construir fluxos simples — mas não é uma ferramenta de arrastar e soltar. Órgãos sem nenhum servidor com perfil técnico precisarão desenvolver essa capacidade antes de adotar a ferramenta.
 
-A seguir, os oito critérios da Categoria Ideias Inovadoras Implementáveis (subitem 7.3.2 do Edital), com seus pesos.
+**Requer desenvolvimento individual de cada fluxo.** Não há automação pronta para empenhar, para registrar ponto ou para consultar saldo. Cada tarefa a ser automatizada requer que a equipe técnica entenda o processo, mapeie as telas do sistema e escreva o script correspondente. Esse é um investimento real de tempo.
 
-## 5.1. Capacidade de inovação (peso 3)
+**Requer ambiente Linux ou WSL.** O emulador x3270/s3270 é uma ferramenta Linux. No Windows, roda via WSL (Windows Subsystem for Linux), recurso nativo das versões atuais do Windows, mas que exige configuração inicial. Em máquinas com políticas de TI mais restritivas, pode ser necessária validação com a área de infraestrutura.
 
-A inovação está em três frentes. Tecnicamente, troca o paradigma frágil de RPA visual, que trata a tela como imagem, por comunicação direta com o protocolo do terminal, robusta e determinística. Em modelo, substitui a configuração presa a uma ferramenta proprietária por código aberto, versionado e auditável, que pertence ao Estado. Institucionalmente, propõe algo raro: uma única plataforma, sem custo de licença e sem fornecedor único, capaz de automatizar os três sistemas que sustentam toda a Administração estadual.
+**Requer validação da conexão de rede.** A conexão com o terminal PRODEMGE precisa funcionar a partir do ambiente Linux/WSL. Em geral funciona — é a mesma conexão de rede que o emulador visual usa — mas políticas específicas do órgão podem exigir ajuste.
 
-A inovação não compete com o Automatiza.MG, soma-se a ele. O Power Automate continua excelente para fluxos pontuais no ecossistema Microsoft moderno; a plataforma cobre o nicho complementar dos sistemas legados estruturantes, em que a abordagem visual é tecnicamente frágil. A própria biblioteca do Automatiza.MG confirma essa demanda ao listar robôs para SIAD, SIAFI e SISAP e um robô de "Login no Terminal PRODEMGE", reconhecendo o terminal como alvo, sem ainda cobrir os fluxos completos que esta plataforma propõe.
+Esses desafios não invalidam a proposta — definem seu público-alvo. A ferramenta é para equipes técnicas que já têm ou querem desenvolver capacidade de automação. Para órgãos com esse perfil, ela remove a barreira que hoje impede que essa possibilidade sequer exista.
 
-## 5.2. Efeitos da inovação na simplificação administrativa (peso 3)
+---
 
-**[NOVO] Mais do que automatizar o que já existe, a plataforma abre espaço para repensar o processo: a experiência da equipe mostra que mapear uma rotina para automatizá-la revela tarefas manuais herdadas de fluxos burocráticos que podem ser redesenhados e simplificados. Evita-se, assim, a simples reprodução digital de ineficiências, alinhando a ideia à Política de Simplificação do Estado.**
+## 7. Por que esta abordagem agrega valor ao contexto existente
 
-A ideia atua no coração da Política de Simplificação (Decreto nº 47.441/2018). Substitui a digitação tela a tela, provavelmente a forma mais onerosa de execução administrativa ainda existente, por preenchimento estruturado em planilha com execução automática. Padroniza, entre órgãos diferentes, operações que hoje cada um executa à sua maneira; reduz drasticamente o tempo de execução; elimina retrabalho de erros de digitação; e gera trilha de auditoria automática de cada operação.
+O Estado de Minas Gerais já possui o programa Automatiza.MG, com mais de 110 automações desenvolvidas e resultados expressivos em tempo economizado. Esta proposta não compete com o programa — complementa-o, cobrindo um nicho que o programa ainda não atende plenamente.
 
-**[NOVO] Mais do que automatizar, a abordagem repensa o processo. Ao mapear as rotinas para automatizá-las, evidencia-se que parte das tarefas manuais resulta de fluxos burocráticos que podem ser redesenhados e simplificados, o que evita a simples reprodução digital de ineficiências e potencializa o ganho de simplificação administrativa.**
+O Automatiza.MG cobre com excelência o ecossistema Microsoft moderno: aplicativos de Office, portais web, formulários, e-mail, sistemas com interface gráfica. Para esse universo, ele é a solução adequada.
 
-**[NOVO] A simplificação não se limita a acelerar o que já existe. Ao mapear as rotinas para automatizá-las, torna-se possível identificar tarefas que resultam de fluxos burocráticos passíveis de redesenho. A plataforma, assim, é também um convite à reengenharia dos processos, evitando a reprodução digital de ineficiências e elevando a qualidade do próprio fluxo de trabalho.**
+O nicho que esta proposta aborda é diferente: sistemas legados acessados por protocolo TN3270, ambiente específico onde o RPA visual encontra seus limites naturais. A própria biblioteca do Automatiza.MG confirma essa demanda ao listar automações para SIAFI, SIAD e SISAP — e ao incluir um robô específico de "Login no Terminal PRODEMGE". O que esta proposta oferece é a camada técnica especializada para esse ambiente.
 
-## 5.3. Geração de valor público com foco no usuário (peso 3)
+As duas abordagens existem lado a lado para fins diferentes. Uma equipe pode usar Power Automate para um processo no SharePoint e Python/py3270 para um processo no SIAFI. Não é escolha entre um e outro: é ter a ferramenta certa para cada contexto.
 
-**[NOVO] O foco em reposicionar o servidor para atividades de maior valor não é um argumento construído para esta inscrição: é a tese que orienta o trabalho da equipe desde 2024, documentada desde o início como a finalidade central da automação. Isso confere autenticidade e consistência à visão aqui apresentada.**
+---
 
-A pessoa usuária imediata é a servidora ou servidor que opera os sistemas, e o desenho nasce da empatia direta com essa realidade: a equipe que concebeu a solução é a mesma que sofria com a operação manual. Mas o valor não para aí. Como detalhado na seção 4, o tempo devolvido ao servidor se converte em melhor atendimento ao cidadão em todas as áreas do Estado, da saúde à segurança. É valor público no sentido mais pleno: melhora a vida de quem opera e a de quem é servido.
+## 8. Características técnicas que geram valor operacional
 
-**[NOVO] Esse propósito de reposicionar o servidor para atividades de maior valor não é um discurso construído para esta inscrição: é a tese que orienta a iniciativa desde 2024, documentada desde o início como sua finalidade central. A plataforma proposta apenas amplia, para todo o Estado, um objetivo que sempre esteve no centro do trabalho da equipe.**
+**O computador fica livre durante a execução.** Por rodar em modo texto sem interface gráfica, a automação não precisa controlar mouse, teclado ou tela. O servidor que disparou o processo pode continuar trabalhando normalmente enquanto o script executa.
 
-## 5.4. Grau de agilidade na implantação (peso 2)
+**Zero custo de licença.** Python, py3270, x3270/s3270 e Git são todos gratuitos e de código aberto. O órgão não paga nada pela ferramenta — o custo é exclusivamente de tempo de desenvolvimento da equipe.
 
-O ciclo é curto e incremental. A prova de viabilidade já existe no SIAFI, construída em poucos meses. Cada novo fluxo é um módulo independente que reaproveita o núcleo já validado e gera benefício imediato para a área correspondente, sem necessidade de esperar a conclusão do projeto inteiro. A expansão para os primeiros fluxos de SIAD e SISAP pode ser entregue em ciclos sequenciais de poucas semanas cada.
+**Código auditável e log por operação.** Por ser software livre, qualquer servidor com perfil técnico pode ler o código e entender exatamente o que a automação faz. Cada execução pode gerar log estruturado com dados de entrada, operação realizada e retorno do sistema — trilha de auditoria que praticamente não existe na operação manual.
 
-## 5.5. Grau de alcance (peso 2)
+**Credenciais seguras por padrão.** A prática recomendada é armazenar credenciais em arquivo `.env`, excluído do controle de versão. Cada operador usa suas próprias credenciais — não há conta compartilhada.
 
-Este é o critério em que a plataforma mais se destaca. Como SIAFI, SIAD e SISAP atravessam todas as Secretarias, autarquias e fundações, o alcance é o Estado inteiro. Em escala individual, são milhares de servidores das áreas de orçamento, finanças, compras, contratos, patrimônio e administração de pessoal. Indiretamente, alcança todos os cidadãos atendidos pelos serviços que esses sistemas viabilizam. Poucas ideias têm um alcance potencial tão amplo quanto uma plataforma que toca os três pilares operacionais do Estado.
+**Possibilidade de execução em servidor.** Por não depender de interface gráfica, a automação pode rodar em servidor Linux headless, conectado via VPN ao ambiente da PRODEMGE, abrindo a possibilidade de execuções agendadas e centralizadas.
 
-**[DADO PÚBLICO A VALIDAR] O Poder Executivo estadual conta com aproximadamente 377 mil servidores ativos, sendo a Educação a maior pasta, com mais de 255 mil. Ainda que apenas uma fração opere diretamente os sistemas estruturantes, trata-se de um universo de milhares de servidores nas áreas de orçamento, finanças, compras, patrimônio e gestão de pessoas, todos beneficiários potenciais da plataforma. (Fonte: Governo de MG, 2025.)**
+**Roda em qualquer hardware comum.** Não há exigência de máquina dedicada, edição corporativa de sistema operacional ou requisito especial de CPU.
 
-**[NOVO] E o alcance não é apenas potencial: já há tração concreta e multissetorial. Após a divulgação institucional da automação de descentralização de cotas, doze órgãos manifestaram interesse formal em adotá-la, com forte concentração na segurança pública, Polícia Civil (PCMG, já implantado), Polícia Militar (PMMG), Corpo de Bombeiros Militar (CBMMG), Gabinete Militar do Governador (GMG), Fundo Estadual de Saúde (FES), Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH), Secretaria de Justiça e Segurança Pública (SEJUSP), Secretaria de Cultura (SECULT), Secretaria de Infraestrutura (SEINFRA), Departamento de Estradas de Rodagem (DER) e Fundação de Amparo à Pesquisa de Minas Gerais (Fapemig). A SEPLAG, órgão proponente, também já opera a solução internamente. Que órgãos tão diversos busquem espontaneamente a mesma solução demonstra que a demanda por uma plataforma de automação dos sistemas estruturantes é real e transversal a todo o Estado.**
+---
 
-**[A CONFIRMAR] O interesse alcançou inclusive um município, a Prefeitura de Brumadinho, sinalizando que o potencial de replicação ultrapassa o Executivo estadual e pode alcançar outras esferas de governo. (Contato em andamento.)**
+## 9. Potencial de multiplicação
 
-## 5.6. Capacidade de multiplicação (peso 1)
+A ferramenta é multiplicável por design. Os repositórios são públicos, o stack é gratuito, e o modelo de compartilhamento é orgânico: cada fluxo desenvolvido por um órgão pode ser contribuído ao repositório compartilhado e reutilizado por outros que realizam a mesma operação.
 
-A solução é multiplicável por desenho. Por ser software livre, qualquer órgão adota o núcleo sem adaptação e sem custo. O catálogo de fluxos cresce de forma colaborativa: cada fluxo construído por um órgão fica disponível para todos. O custo marginal de cada nova automação é decrescente. E a multiplicação ultrapassa o Executivo estadual: outros Poderes, Municípios e demais estados que operam terminais TN3270, situação ainda comum no Brasil, podem adotar a plataforma sem custo. Minas passa a exportar tecnologia pública.
+Esse modelo tem uma propriedade importante: o valor cresce com o uso. Quanto mais órgãos adotam e contribuem com fluxos, mais fluxos ficam disponíveis para todos, com custo marginal decrescente para cada novo órgão que entra.
 
-**[NOVO] Há ainda um vetor de multiplicação imediato e concreto: a base de automações que o Estado já possui. O programa Automatiza.MG contabiliza mais de 110 robôs criados, mais de 10 mil horas economizadas e dezenas de servidores reposicionados para atividades de maior valor. Parte relevante dessas automações opera justamente sobre SIAFI, SIAD e SISAP, a própria biblioteca do programa descreve robôs para empenhos, liquidações, pagamentos e inserção de dados nesses sistemas. São exatamente as operações em terminal legado nas quais a abordagem visual encontra mais limitações de estabilidade. A plataforma proposta oferece a essa base já instalada um motor técnico mais robusto, rápido e auditável: automações que hoje rodam de forma frágil podem migrar para uma fundação mais sólida, sem reescrever a lógica de negócio, apenas trocando a camada que conversa com o sistema. A multiplicação, portanto, não parte do zero, encontra um ecossistema de automação maduro e em expansão pronto para se beneficiar.**
+A multiplicação também alcança outros entes: municípios e outros estados que operam terminais TN3270 — situação ainda comum no Brasil — podem adotar a mesma biblioteca sem adaptação. A experiência de Minas Gerais pode servir de referência nacional para automação de sistemas legados na Administração Pública.
 
-**[NOVO] A disseminação aos órgãos é conduzida como diretriz da SPLOR, alinhada à orientação de servir seus órgãos clientes. A plataforma nasce para ser compartilhada, e é a própria equipe autora, dentro da SPLOR, que conduz essa disseminação, sem depender de estrutura externa.**
+---
 
-## 5.7. Governabilidade (peso 1)
+## 10. Equipe proponente
 
-A implantação depende apenas de articulação interna ao Executivo estadual: SEPLAG na governança do padrão, PRODEMGE na gestão do ambiente, e os órgãos na adoção e na proposição de fluxos. Não há dependência de fornecedor externo, nova contratação ou novo perfil de acesso. As credenciais são as que o servidor já tem. Opera em conformidade com a LGPD, pois não coleta novos dados pessoais e produz logs internos auditáveis.
+A solução foi concebida e desenvolvida por equipe pequena e multidisciplinar da SEPLAG:
 
-## 5.8. Disponibilidade de recursos (peso 2)
+**Guilherme de Melo Ferreira** — principal responsável técnico. Desenvolveu a arquitetura da biblioteca e os fluxos em produção, concebendo o modelo modular que viabiliza a replicabilidade.
 
-A ideia exige poucos recursos. Em software, tudo é livre e gratuito (Python, py3270, x3270/s3270, Git). Em pessoas, viabiliza-se com equipe técnica pequena atuando junto às áreas usuárias, modelo já validado na prática. Em hardware, roda em qualquer computador comum, sem máquina dedicada e sem licença, e os requisitos não crescem com o número de fluxos. A diferença de custo em relação ao modelo proprietário, em escala estadual, é de ordem de grandeza, e é o que torna realista a ambição de uma plataforma única para todos os sistemas legados do Estado.
+**Bruno Henrique de Oliveira Rosa** — domínio técnico do SIAFI e das regras orçamentárias. Traduz os processos em especificações para a automação e valida os fluxos em produção.
 
-# 6. Vantagens estruturais da abordagem
+**Gabriel Braico Dornas** — Assessor Chefe de Inteligência de Dados. Direção técnica estratégica do projeto, avaliação de viabilidade e respaldo às decisões técnicas.
 
-Além dos critérios formais, três vantagens técnicas se traduzem diretamente em economia pública e viabilidade de escala.
+---
 
-## 6.1. Não trava o computador do servidor
+## 11. Próximos passos propostos
 
-A base técnica da plataforma opera inteiramente em modo texto, sem interface gráfica, sem capturar mouse ou teclado. Isso significa que a automação roda em segundo plano enquanto o servidor continua trabalhando normalmente na mesma máquina. Não há tela travada, não há estação dedicada. No modelo de RPA visual, ao contrário, o computador frequentemente fica bloqueado durante a execução ou exige máquina exclusiva. Em escala estadual, isso representa economia direta de centenas de computadores que deixam de precisar ser dedicados.
+1. **Documentação em português:** guia completo de configuração do ambiente, primeiros passos e boas práticas para sistemas TN3270.
+2. **Guia prático:** roteiro para a primeira automação — conexão, navegação básica, leitura de retorno — baseado nos aprendizados reais da equipe.
+3. **Capacitação inicial:** sessões técnicas para equipes de órgãos interessados.
+4. **Formalização do repositório:** espaço institucional de compartilhamento de fluxos entre órgãos, com orientações para contribuição.
+5. **Acompanhamento dos primeiros adotantes:** suporte técnico inicial e coleta de aprendizados para aprimorar a documentação.
 
-## 6.2. Roda em qualquer máquina comum, sem licença
+---
 
-A plataforma funciona em qualquer Linux moderno (gratuito) ou no Windows via WSL, recurso nativo das versões atuais. Os requisitos de hardware são modestos e não escalam com o número de fluxos: rodar dez automações no mesmo computador exige apenas um pouco mais de memória, sem licença adicional. No modelo proprietário, cada nova frente de uso adiciona custo de licença, de máquina, ou de ambos.
-
-## 6.3. Estável e rápida, comprovado em teste real
-
-Por conversar diretamente com o protocolo do sistema, em vez de "olhar" a tela como imagem, a automação é muito mais fluida e o próprio sistema responde de forma mais estável. Isso não é teoria: em teste comparativo real, um mesmo lote de 50 operações no SIAFI foi executado em cerca de 28 segundos na abordagem proposta, contra 13 minutos e 53 segundos no RPA visual, na mesma máquina e no mesmo sistema. A diferença de estabilidade e velocidade é estrutural, e favorece o cumprimento de prazos legais críticos.
-
-# 7. Por que esta ideia é confiável: a prova já existe
-
-Diferentemente de uma ideia puramente conceitual, esta proposta se apoia em uma prova de conceito concreta e em produção. No sistema mais crítico dos três, o SIAFI, a equipe da SPLOR/SEPLAG já desenvolveu e colocou em uso fluxos reais de automação: aprovação e anulação de cotas, remanejamento de crédito, análise para alterações orçamentárias e até a geração de minutas para publicação de decretos. Esses fluxos rodam no dia a dia da diretoria.** Essa prova de conceito não é simbólica: somente no fluxo de remanejamento, em menos de um mês, a automação já processou 257 alterações orçamentárias para 29 unidades orçamentárias, movimentando recursos da ordem de R$ 1,7 bilhão, sem erros de lançamento. A base técnica da plataforma proposta, portanto, já opera em escala real; o passo seguinte é estendê-la aos demais sistemas estruturantes.**
-
-**Validação externa real. **A automação da descentralização de cotas para órgãos foi validada com a Polícia Civil de Minas Gerais como piloto, em ambiente real, com aval da diretoria de orçamento do órgão. Após divulgação institucional da iniciativa, oito órgãos já manifestaram interesse formal em adotá-la, demonstrando que existe apetite real e espontâneo da Administração pela automação desses sistemas.
-
-**Evolução tecnológica honesta. **A versão inicialmente divulgada da iniciativa foi construída em Power Automate e serviu como laboratório para a equipe compreender o lado dos órgãos. A partir desse aprendizado, a solução evoluiu para uma implementação própria em Python, tecnicamente superior e mais estável, que substituiu a anterior, e é essa versão que fundamenta a plataforma aqui proposta.
-
-Em outras palavras: a parte mais difícil, provar que dá para automatizar com robustez o sistema mais crítico do Estado, já foi feita. A ideia agora é estender esse padrão comprovado ao SIAD e ao SISAP e institucionalizá-lo como plataforma aberta para todos os órgãos.
-
-# 8. Equipe proponente
-
-A solução foi concebida e desenvolvida por uma equipe pequena e multidisciplinar da SEPLAG, cuja complementaridade de competências foi decisiva para transformar uma necessidade real de trabalho em uma solução técnica robusta:
-
-**Guilherme de Melo Ferreira, **principal responsável técnico pela solução. Atua na arquitetura, na construção e na evolução da biblioteca e dos fluxos de automação, tendo concebido o desenho modular que torna a solução robusta e replicável (comprovado pela construção do segundo e do terceiro fluxos reaproveitando o núcleo do primeiro). Reúne as frentes de desenvolvimento, arquitetura de software e gestão técnica do projeto.
-
-**Bruno Henrique de Oliveira Rosa, **servidor com domínio técnico do SIAFI e das regras orçamentárias. Traduz os processos operacionais em especificações que orientam a construção das automações, valida o comportamento dos fluxos em produção e participa do desenvolvimento da solução.
-
-**Gabriel Braico Dornas, **Assessor Chefe de Inteligência de Dados, responsável pela direção técnica estratégica do projeto. Avalia a viabilidade das ideias propostas pela equipe e orienta os melhores caminhos de implementação, dando respaldo técnico às decisões.
-
-É justamente a soma dessas três frentes, conhecimento do negócio, capacidade de desenvolvimento e assessoria de inteligência de dados, que dá solidez à iniciativa e sustenta sua continuidade.
-
-# 9. Origem e relação com o contexto institucional
-
-**[NOVO] Embora a categoria seja de ideias inovadoras, vale registrar que a base desta proposta não é improvisada: nasce de uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos entraram em operação na DCMEFO, trajetória inclusive objeto de produção técnica e acadêmica pela própria equipe. A ideia de plataforma estadual aqui proposta é a evolução natural e documentada desse percurso.**
-
-A ideia tem uma fagulha inicial honesta: o contato da equipe da SPLOR com o tema da automação se deu a partir de um curso básico de Power Automate oferecido pela SEPLAG. Foi o ponto de partida. A partir dali, porém, a trajetória foi inteiramente própria: ao tentar aplicar o Power Automate ao terminal PRODEMGE, a equipe constatou as limitações técnicas dessa abordagem para sistemas legados e, por conta própria, pesquisou, desenhou e desenvolveu uma solução especializada e tecnicamente muito superior, a biblioteca em Python que fundamenta esta proposta. A autoria e a evolução da solução são da própria equipe da DCMEFO/SPLOR.
-
-**[NOVO] Embora a plataforma aqui proposta seja uma evolução, a base de onde ela parte vem de uma linha de trabalho contínua desde maio de 2024, quando os primeiros fluxos de automação entraram em produção na DCMEFO, trajetória inclusive registrada em produção técnica e acadêmica da própria equipe. A ideia, portanto, não nasce do zero: parte de um percurso consolidado e documentado.**
-
-**[NOVO] Vale registrar que esta não é uma ideia improvisada: ela se apoia em uma linha de trabalho amadurecida de forma contínua desde maio de 2024, quando os primeiros fluxos de automação entraram em operação na DCMEFO, trajetória inclusive registrada em produção técnica e acadêmica pela própria equipe. A proposta de plataforma estadual é a evolução natural desse percurso consolidado.**
-
-# 10. Resultados esperados com a institucionalização
-
-- Devolução de milhares de horas de trabalho qualificado, hoje gastas em digitação, às atividades-fim de cada órgão, com benefício direto ao cidadão.
-
-- Ampliação do indicador de servidores reposicionados, métrica oficial da política de automação do Estado, ao levar a automação aos três sistemas estruturantes mais críticos do Executivo.
-
-- Redução do risco em operações financeiras e administrativas críticas pela eliminação de erros de digitação.
-
-- Padronização da automação de sistemas legados no Executivo estadual, com biblioteca compartilhada e governança unificada.
-
-- Trilha de auditoria automática de cada operação, ampliando transparência e controle interno.
-
-- Autonomia tecnológica do Estado: solução própria, sem custo de licença e sem dependência de fornecedor único.
-
-- Desenvolvimento de capacidade técnica interna capaz de manter e evoluir a plataforma.
-
-- Posicionamento de Minas Gerais como referência nacional em automação aberta de sistemas legados, com tecnologia exportável a outros entes.
+*A biblioteca já está em produção. O que esta proposta apresenta é a ideia de abrir esse caminho para todo o Estado.*
