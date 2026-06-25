@@ -63,7 +63,7 @@ Biblioteca Python para automação via protocolo TN3270
 Cada órgão constrói os fluxos para suas próprias tarefas
 Código aberto, auditável, sem custo de licença
 Roda em background; computador livre durante execução
-Versionamento Git; credenciais seguras em arquivo .env
+Versionamento Git; credenciais totalmente seguras
 ```
 
 ### Valor gerado
