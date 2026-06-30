@@ -76,7 +76,7 @@ Equipes de orçamento de todos os órgãos (descentralização)
 Biblioteca Python que opera o terminal via protocolo
 3 fluxos em produção: cota, crédito, descentralização
 Arquitetura modular e replicável com custo decrescente
-Log automático, versionamento Git, credenciais em .env
+Log automático, versionamento Git, credenciais seguras
 ```
 
 ### Valor gerado
@@ -97,8 +97,9 @@ Resistência cultural a processos manuais estabelecidos
 ### Recursos necessários e análise financeira
 ```
 Software: Python, py3270, x3270, Git — tudo gratuito
-Hardware: qualquer computador comum com WSL
+Hardware: computador computador linux ou windowns com WSL
 Pessoas: 1-2 técnicos para desenvolvimento/manutenção
+Pessoas: servidores não técnicos dispostos a aprender
 Sem custo de licença; sem servidor dedicado
 ```
 
@@ -125,7 +126,7 @@ A SPLOR/SEPLAG é responsável por operações mensais de alto volume no SIAFI/M
 
 O processo é lento, tedioso e exposto a erros de digitação — risco grave porque opera sobre valores financeiros e gera documentos contábeis cuja correção exige procedimentos formais. Em meses de alta demanda, a digitação consome parcela desproporcional do tempo da equipe técnica, em detrimento das atividades de análise orçamentária que constituem o núcleo da função.
 
-A ferramenta disponível no Estado, o Power Automate Desktop, apresenta limitação técnica relevante para esse contexto: opera o terminal por simulação visual (captura de imagem e clique em coordenadas de pixel), abordagem frágil para mainframe, sujeita a quebras por mudanças de resolução, posição da janela ou atualizações visuais. A equipe identificou e desenvolveu uma solução tecnicamente superior para esse nicho específico.
+A ferramenta disponível no Estado, o Power Automate Desktop, apresenta limitação técnica relevante para esse contexto: opera o terminal por simulação visual (captura de imagem e clique em coordenadas de pixel), abordagem frágil para mainframe, sujeita a quebras por mudanças de resolução, posição da janela ou atualizações visuais, além de bloquear o computador para uso humano durante a execução da automação. A equipe identificou e desenvolveu uma solução tecnicamente superior para esse nicho específico.
 ```
 
 ### Ideia/iniciativa `[600 a 2.500 caracteres — atual: 1.248]`
@@ -171,7 +172,7 @@ TESTE COMPARATIVO (02/06/2026 — 50 operações de remanejamento de crédito, m
 • Power Automate: 13 min 53 seg (horários registrados automaticamente pelo sistema)
 • Python/py3270: 28 segundos
 • Redução vs manual: 97%+ | vs Power Automate: ~30x mais rápido
-• Erros: zero nos três cenários automatizados; todos os 50 lançamentos retornaram "REGISTRO EFETUADO"
+• Erros: zero nos dois cenários automatizados; todos os 50 lançamentos retornaram "REGISTRO EFETUADO"
 • Diferencial adicional: Python libera o computador durante a execução; Power Automate e manual exigem máquina dedicada
 
 PRODUÇÃO REAL — Fluxo de remanejamento de crédito (19/05/2026 a 16/06/2026, menos de um mês):
@@ -212,7 +213,7 @@ Risco de resistência cultural existe em órgãos com processos manuais muito en
 ```
 A replicabilidade foi validada empiricamente: o segundo fluxo (remanejamento) foi construído a partir do primeiro (cota) com esforço significativamente menor, reutilizando as funções de login, navegação e finalização sem qualquer modificação.
 
-Externamente, a multiplicação se viabiliza por três caminhos: repositórios públicos no GitHub (splor-mg), cloná­veis por qualquer órgão; stack 100% gratuito sem custo de licença que cresça com o uso; e arquitetura modular que permite que cada órgão contribua com fluxos próprios ao catálogo compartilhado.
+Externamente, a multiplicação se viabiliza por três caminhos: repositórios públicos no GitHub (splor-mg), cloná­veis por qualquer órgão; ferramentas 100% gratuito sem custo de licença que cresça com o uso; e arquitetura modular que permite que cada órgão contribua com fluxos próprios ao catálogo compartilhado.
 
 O alcance se estende além do Executivo estadual. Municípios mineiros e demais estados que operem terminais TN3270 podem adotar a solução sem adaptação institucional. A SPLOR conduz a disseminação como diretriz estratégica, com a equipe autora à frente, garantindo governança e continuidade.
 ```
@@ -223,7 +224,7 @@ Software: 100% gratuito — Python, py3270, x3270/s3270, Git. Sem licença, sem 
 
 Hardware: qualquer computador com Linux ou Windows com WSL (recurso nativo). Sem servidor dedicado, sem edição corporativa do sistema operacional, sem requisito mínimo de CPU. Ponto relevante no contexto estadual: por rodar em qualquer Linux moderno, a solução pode ser instalada em hardware antigo que não suporta Windows 10 — uma máquina dessa geração pode ser reformatada com Linux e transformada em nó de automação dedicado, sem custo adicional de equipamento.
 
-Pessoas: equipe técnica de 1 a 2 pessoas para desenvolvimento, manutenção e disseminação, modelo já validado na DCMEFO/SPLOR. O conhecimento de negócio dos processos orçamentários (Bruno Rosa) e a assessoria de inteligência de dados (Gabriel Dornas) são recursos já existentes na equipe.
+Pessoas: equipe técnica de 1 a 2 pessoas para desenvolvimento, manutenção e disseminação, modelo já validado na DCMEFO/SPLOR. O conhecimento de negócio dos processos orçamentários (Bruno Rosa e Guilherme Ferreira) e a assessoria de inteligência de dados (Gabriel Dornas) são recursos já existentes na equipe.
 ```
 
 ### Custos de implantação/manutenção `[máx 1.000 caracteres — atual: 411]`
@@ -235,7 +236,7 @@ Manutenção: baixo custo. Atualizações por mudanças nos sistemas legados sã
 
 ### Recursos orçamentários e financeiros `[máx 1.000 caracteres — atual: 466]`
 ```
-Não há dotação orçamentária específica necessária para o stack tecnológico — todo software é gratuito. O custo é integralmente de pessoal, já alocado e remunerado no quadro permanente da SEPLAG.
+Não há dotação orçamentária específica necessária para as ferramentas tecnológicas — todo software é gratuito. O custo é integralmente de pessoal, já alocado e remunerado no quadro permanente da SEPLAG.
 
 A economia potencial em relação a alternativas proprietárias é expressiva: sem licença de RPA comercial, sem máquinas dedicadas e sem dependência de fornecedor externo, o modelo de custo beneficia o Estado em escala proporcional ao número de órgãos que adotam a solução.
 ```
@@ -263,7 +264,7 @@ A solução opera em três camadas. O núcleo técnico é a biblioteca py3270/x3
 
 ### Relevância da solução e geração de valor `[atual: 1.936]`
 ```
-A iniciativa resolve problema real, recorrente e de alta relevância institucional: a operação de sistemas legados TN3270 (SIAFI, SIAD, SISAP) consome horas de trabalho qualificado em digitação manual, todos os meses, em praticamente todos os órgãos do Estado. Não é dor de um único setor — é dor estrutural compartilhada por todo o Executivo estadual.
+A iniciativa resolve problema real e muito antigo, recorrente e de alta relevância institucional: a operação de sistemas legados TN3270 (SIAFI, SIAD, SISAP) consome horas de trabalho qualificado em digitação manual, todos os meses, em praticamente todos os órgãos do Estado. Não é dor de um único setor — é dor estrutural compartilhada por todo o Executivo estadual.
 
 A relevância se comprova pela demanda espontânea: após a divulgação institucional da automação de descentralização de cotas, doze órgãos manifestaram interesse formal em adotá-la, com representação em segurança pública, saúde, desenvolvimento regional, cultura, infraestrutura e pesquisa. Órgãos tão distintos buscando a mesma solução demonstra que a demanda é transversal e real.
 
@@ -280,11 +281,11 @@ A qualidade técnica da solução é diferenciada e tecnicamente justificada par
 
 A escolha central — scripting de protocolo TN3270 em vez de RPA visual — é a decisão técnica mais importante da iniciativa. Para sistemas com interface gráfica moderna, o RPA visual é geralmente adequado. Para sistemas mainframe acessados via TN3270, a interação por protocolo é estruturalmente mais robusta: opera por coordenadas lógicas (linha e coluna do terminal) imunes a alterações de resolução, posição da janela, atualizações do emulador ou mudanças visuais do sistema. Cada ponto de fragilidade do RPA visual em mainframe é eliminado por design.
 
-O stack técnico é maduro e amplamente validado. O x3270/s3270 é mantido pela comunidade há mais de duas décadas e é amplamente usado em instituições internacionais que operam mainframes em produção. O py3270 é interface Python madura para essa base. A arquitetura modular adotada — separação clara entre núcleo de acesso, fluxos de cada transação e funções utilitárias compartilhadas — é boa prática de engenharia de software, raramente aplicada a automações de RPA.
+As ferramentas aqui propostas são maduras e mundialmente validadas. O x3270/s3270 é mantido pela comunidade há mais de duas décadas e é amplamente usado em instituições internacionais que operam mainframes em produção. O py3270 é interface Python madura para essa base. A arquitetura modular adotada — separação clara entre núcleo de acesso, fluxos de cada transação e funções utilitárias compartilhadas — é boa prática de engenharia de software, raramente aplicada a automações de RPA.
 
-Há ainda uma dimensão de qualidade com consequências operacionais diretas: o s3270 opera em modo texto sem interface gráfica, sem capturar mouse ou teclado. A automação roda em segundo plano enquanto o servidor continua trabalhando normalmente na mesma máquina. O Power Automate Desktop, ao contrário, captura fisicamente a tela do Windows, exigindo máquina dedicada ou interrompendo o uso pelo operador. Isso representa, em escala estadual, economia de centenas de estações dedicadas.
+Há ainda uma dimensão de qualidade com consequências operacionais diretas: o s3270 opera em modo texto sem interface gráfica, sem capturar mouse ou teclado. A automação roda em segundo plano enquanto o servidor continua trabalhando normalmente na mesma máquina. O Power Automate Desktop, ao contrário, captura fisicamente a tela do Windows, exigindo máquina dedicada ou interrompendo o uso pelo operador. Isso representa, em escala estadual, economia de centenas de estações dedicadas ou servidor público parado aguardando o robô trabalhar.
 
-Essa característica abre ainda uma possibilidade que o RPA visual estruturalmente não permite: execução em servidor central headless, conectado via VPN de governo, viabilizando orquestração corporativa sem multiplicar estações ou licenças.
+Essa característica abre ainda uma possibilidade que o RPA visual estruturalmente não permite: execução em servidor central headless, conectado à rede de governo, viabilizando orquestração corporativa sem multiplicar estações ou licenças.
 
 A efetividade está comprovada em produção: três fluxos em operação real, 109 documentos SIAFI gerados, R$ 1,72 bilhão processado, zero erros de lançamento. A construção do segundo fluxo a partir do primeiro — com esforço significativamente menor — valida empiricamente a qualidade arquitetural.
 ```
@@ -298,7 +299,7 @@ TESTE COMPARATIVO ESTRUTURADO (50 operações de remanejamento de crédito, mesm
 - Power Automate: 13min53seg (horários registrados automaticamente pelo sistema, testado em 29/05/2026)
 - Python/py3270: 28 segundos (testado em 02/06/2026, log automático)
 - Redução vs. manual: 97%+ | Vs. Power Automate: ~30x mais rápido
-- Erros de lançamento: zero nos três cenários automatizados
+- Erros de lançamento: zero nos dois cenários automatizados
 - Disponibilidade do computador: livre durante execução Python; dedicado nos outros dois cenários
 
 CASO DEMONSTRAÇÃO — lote consolidado (257 linhas, 29 UOs):
@@ -335,7 +336,7 @@ VERSIONAMENTO E AUDITORIA INTEGRAL DO CÓDIGO:
 Todo o código-fonte vive em repositórios Git institucionais (organização splor-mg no GitHub) com histórico completo de alterações, autoria identificada por commit e possibilidade de revisão por pares antes de cada mudança entrar em produção.
 
 TRANSPARÊNCIA TOTAL:
-Por ser software livre, qualquer servidor com perfil técnico pode auditar o código e entender exatamente o que a automação faz. Não há caixa-preta. Cada decisão da automação é rastreável diretamente à linha de código que a produziu — explicabilidade plena, diferente de soluções baseadas em modelos estatísticos opacos.
+Por ser software livre, qualquer servidor com perfil técnico pode auditar o código e entender exatamente o que a automação faz. Não há caixa-preta. Cada decisão da automação é rastreável diretamente à linha de código que a produziu — explicabilidade plena, diferente de soluções baseadas em modelos visuais como o Power Automate.
 
 EXPLICABILIDADE PARA O USUÁRIO FINAL:
 No fluxo de descentralização, cada retorno do SIAFI é traduzido para mensagens em português claro ("saldo zerado na conta", "natureza de despesa inexistente"), registradas na própria planilha de trabalho. O operador sabe exatamente o que aconteceu em cada linha, sem precisar interpretar códigos técnicos do sistema legado.
@@ -349,13 +350,13 @@ A arquitetura prevê tratamento explícito dos códigos de retorno do SIAFI, com
 A replicabilidade já foi demonstrada empiricamente, não é apenas promessa. O segundo fluxo (remanejamento de crédito) foi construído a partir do primeiro (cota orçamentária) reutilizando, sem qualquer modificação, as funções de login, navegação no menu do SIAFI e finalização de documentos. O esforço foi significativamente menor que o do primeiro fluxo. O terceiro fluxo (descentralização) reforçou o padrão e ainda avançou em empacotamento: conta com instalador automatizado via script .bat e manual em linguagem simples para operação sem suporte especializado.
 
 MODELO DE REPLICAÇÃO EXTERNA:
-Repositórios públicos no GitHub (splor-mg), cloná­veis por qualquer órgão sem custo. Stack 100% gratuito (Python, py3270, x3270/s3270, Git) sem licença que cresça com o número de usuários, máquinas ou fluxos. Arquitetura modular que permite a qualquer órgão contribuir com fluxos próprios ao catálogo compartilhado, criando valor crescente para todos.
+Repositórios públicos no GitHub (splor-mg), cloná­veis por qualquer órgão sem custo. Ferramentas 100% gratuitas (Python, py3270, x3270/s3270, Git) sem licença que cresça com o número de usuários, máquinas ou fluxos. Arquitetura modular que permite a qualquer órgão contribuir com fluxos próprios ao catálogo compartilhado, criando valor crescente para todos.
 
 COMPATIBILIDADE COM HARDWARE DO PARQUE ESTADUAL:
 A solução roda em qualquer Linux moderno, incluindo hardware que não atende os requisitos mínimos do Windows 10. No contexto do parque de equipamentos estadual, isso significa que máquinas antigas — que não conseguiriam rodar nenhuma ferramenta moderna de automação — podem ser reformatadas com uma distribuição Linux leve e transformadas em nós de automação dedicados, sem custo de hardware adicional. O Power Automate Desktop, por comparação, exige Windows 10/11 Pro/Enterprise, ao menos 4 núcleos de CPU para execução não atendida e licença Process adicional — requisitos que excluem grande parte do parque mais antigo e geram custo recorrente de licença.
 
 SUSTENTABILIDADE:
-O stack técnico (x3270, Python, py3270) é estável há décadas, com baixíssima frequência de mudanças disruptivas. A documentação no repositório permite que novos servidores assumam a manutenção sem dependência dos autores originais. A disseminação é diretriz estratégica da SPLOR, conduzida pela própria equipe autora. A possibilidade de execução em servidor headless centralizado reforça a sustentabilidade em escala, permitindo que uma equipe enxuta suporte múltiplos órgãos.
+As ferramentas (x3270, Python, py3270) é estável há décadas, com baixíssima frequência de mudanças disruptivas. A documentação no repositório permite que novos servidores assumam a manutenção sem dependência dos autores originais. A disseminação é diretriz estratégica da SPLOR, conduzida pela própria equipe autora. A possibilidade de execução em servidor headless centralizado reforça a sustentabilidade em escala, permitindo que uma equipe enxuta suporte múltiplos órgãos.
 
 ALCANCE ALÉM DO EXECUTIVO ESTADUAL:
 Municípios mineiros e demais estados que operam terminais TN3270 — situação ainda comum no setor público brasileiro — podem adotar a solução sem adaptação institucional. Minas Gerais passa a exportar tecnologia pública aberta para automação de sistemas legados.
@@ -376,7 +377,7 @@ Municípios mineiros e demais estados que operam terminais TN3270 — situação
 
 ### Outras observações (Tela 5) `[máx 2.000 caracteres]`
 ```
-A iniciativa está em operação real desde maio de 2024, com cronograma de entregas incrementais — cada fluxo é módulo independente que gera benefício imediato sem aguardar a conclusão do projeto como um todo. Os números de produção do fluxo de remanejamento (19/05 a 16/06/2026) foram validados por dois caminhos independentes e refletem operação real, não teste controlado. O atendimento aos doze órgãos com interesse manifestado é o próximo passo imediato e depende exclusivamente de recursos internos da SPLOR.
+A iniciativa está em operação real desde maio de 2026, com cronograma de entregas incrementais — cada fluxo é módulo independente que gera benefício imediato sem aguardar a conclusão do projeto como um todo. Os números de produção do fluxo de remanejamento (19/05 a 16/06/2026) foram validados por dois caminhos independentes e refletem operação real, não teste controlado. O atendimento aos doze órgãos com interesse manifestado é o próximo passo imediato e depende exclusivamente de recursos internos da SPLOR.
 ```
 
 ---

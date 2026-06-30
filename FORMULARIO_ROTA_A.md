@@ -21,7 +21,7 @@ Tecnologia e Inovação / Gestão Pública e Simplificação Administrativa
 
 ### Título `[máx 50 caracteres — atual: 46]`
 ```
-Automação Python dos Sistemas TN3270 do Estado
+Automação Python dos Terminais PRODEMGE (Sistemas TN3270)
 ```
 
 ### Instituição responsável
@@ -45,16 +45,15 @@ A abordagem já foi usada pela própria equipe proponente para automatizar proce
 
 ### Desafios ou oportunidades
 ```
-SIAFI, SIAD e SISAP usados manualmente pela maioria
-Operação manual: lenta, exposta a erro e sem registro
-Sistemas legados TN3270 têm particularidades técnicas
+SIAFI, SIAD e SISAP operados manualmente pela maioria
 Servidores gastam tempo em tarefas mecânicas repetitivas
+Operação manual e lenta, sem registro e com muitos a erros
 Automação desses sistemas exige abordagem especializada
 ```
 
 ### Público-alvo
 ```
-Qualquer órgão que opere SIAFI, SIAD ou SISAP
+Qualquer órgão que opere Terminais TN3270 (SIAFI, SIAD, SISAP)
 Servidores que desenvolvem ou mantêm automações
 ```
 
@@ -64,7 +63,7 @@ Biblioteca Python para automação via protocolo TN3270
 Cada órgão constrói os fluxos para suas próprias tarefas
 Código aberto, auditável, sem custo de licença
 Roda em background; computador livre durante execução
-Versionamento Git; credenciais seguras em arquivo .env
+Versionamento Git; credenciais totalmente seguras
 ```
 
 ### Valor gerado
@@ -72,8 +71,9 @@ Versionamento Git; credenciais seguras em arquivo .env
 Servidores liberados de digitação repetitiva e manual
 Zero custo de licença de ferramenta de automação
 Log automático de cada operação realizada
-Execução sem bloqueio do computador do servidor
-Código auditável: total transparência sobre o que faz
+Execução sem bloqueio do computador como acontece com PowerAutomate
+Não exige máquinas modernas como acontece com PowerAutomate
+Código auditável: total transparência sobre o que o robô faz
 ```
 
 ### Riscos e incertezas
@@ -98,11 +98,13 @@ Roda em hardware antigo sem suporte ao Windows 10
 PRODEMGE: estabilidade e disponibilidade do TN3270
 Órgãos com equipe técnica para adoção e disseminação
 Automatiza.MG: abordagem complementar ao programa
+SPLOR/SEPLAG: Curso Python trilha-dev
 ```
 
 ### Detalhamento da solução, aprimoramento e multiplicação
 ```
 Disponibilizar biblioteca e documentação para os órgãos
+Disponibilizar curso Python trilha-dev
 Guia de primeiros passos em linguagem acessível
 Capacitação de equipes técnicas interessadas
 Repositório público no GitHub para contribuições
@@ -155,28 +157,30 @@ O valor direto é a capacidade que o órgão ganha: qualquer equipe técnica pas
 
 As automações desenvolvidas pela equipe proponente no SIAFI ilustram o potencial: um lote de 50 operações que consumia cerca de uma hora e dezessete minutos de digitação passou a ser concluído em 28 segundos, com zero erros. Os fluxos de remanejamento processaram R$ 1,72 bilhão em menos de um mês, com log completo de cada lançamento.
 
-Além do ganho em velocidade e precisão, a ferramenta tem características que agregam valor ao órgão: roda em segundo plano, sem bloquear o computador do servidor durante a execução; não tem custo de licença; produz log estruturado e auditável de cada operação; e o código é inteiramente aberto e inspecionável. O servidor que antes passava horas digitando pode dedicar esse tempo à análise, ao controle e às atividades que exigem inteligência humana — o que beneficia, em última instância, o cidadão atendido pelo órgão.
+Além do ganho em velocidade e precisão, a ferramenta tem características que agregam valor ao órgão: roda em segundo plano, sem bloquear o computador do servidor durante a execução (grande problema enfrentado na utilização da ferramenta RPA PowerAutomate); não tem custo de licença; produz log estruturado e auditável de cada operação; e o código é inteiramente aberto e inspecionável. O servidor que antes passava horas digitando pode dedicar esse tempo à análise, ao controle e às atividades que exigem inteligência humana — o que beneficia, em última instância, o cidadão atendido pelo órgão.
 ```
 
 ### Público-alvo `[máx 1.000 caracteres — atual: 598]`
 ```
 O público-alvo imediato são as equipes técnicas dos órgãos estaduais — servidores com perfil de TI, analistas de sistemas ou profissionais com conhecimento em Python — que queiram construir automações para as tarefas que seus órgãos realizam no SIAFI, SIAD ou SISAP.
 
+Equipes não técnicas também tem grande potencial, uma vez que a curva de aprendizagem da linguagem de programação Python é relativamente baixa em relação a outras e a existência de curso básico voltado para servidores públicos já disponível pela SPLOR chamado trilha-dev.
+
 Como esses três sistemas estão presentes em todas as Secretarias, autarquias e fundações do Executivo Estadual, o alcance potencial é amplo. O benefício final se estende a todos os servidores que, com automações construídas pelas equipes técnicas, ficam liberados de tarefas repetitivas para se dedicar ao trabalho de maior valor.
 ```
 
 ### Riscos e incertezas `[600 a 2.500 caracteres — atual: 1.032]`
 ```
-O principal desafio é a exigência de capacidade técnica para uso da ferramenta. Diferentemente de soluções de interface gráfica, a construção de automações com esta biblioteca requer conhecimento em Python e familiaridade com o conceito de protocolo de terminal. Cada fluxo precisa ser desenvolvido individualmente para cada tarefa. Esse é um requisito real, não minimizável: a ferramenta é para equipes técnicas, não para o servidor geral.
+O principal desafio é a exigência de capacidade técnica para uso da ferramenta. Diferentemente de soluções de interface gráfica, a construção de automações com esta biblioteca requer conhecimento em Python e familiaridade com o conceito de protocolo de terminal. Cada fluxo precisa ser desenvolvido individualmente para cada tarefa. Esse é um requisito real, não minimizável: a ferramenta, a princípio, é implementada de maneira mais rápida por equipes técnicas. O que não significa que outros servidores não consigam aprender e realizar suas próprios robôs, aja vista que os criadores da ideia não sabiam Python antes de iniciar a criação das automações citadas aqui.
 
-A mitigação está na documentação acessível e no guia de primeiros passos que a proposta inclui — reduzir a barreira de entrada é parte central da ideia. Mas o limite permanece: sem ao menos um servidor com perfil técnico no órgão, a adoção não acontece.
+A mitigação está na documentação acessível e no guia de primeiros passos que a proposta inclui — reduzir a barreira de entrada é parte central da ideia. Mas o limite permanece: sem ao menos um servidor com perfil técnico no órgão, a adoção é claramente mais difícil.
 
 O ambiente de execução requer Linux ou Windows com WSL (Windows Subsystem for Linux), recurso nativo das versões atuais do Windows, mas que pode demandar configuração inicial por perfil técnico. A PRODEMGE pode ter políticas de rede que precisem de validação prévia para garantir que a conexão TN3270 funcione a partir do ambiente WSL.
 ```
 
 ### Estratégia de aprimoramento e multiplicação `[600 a 2.500 caracteres — atual: 878]`
 ```
-A ferramenta é multiplicável por design: é software livre, os repositórios são públicos no GitHub (organização splor-mg), e o stack é 100% gratuito, sem custo que cresça com o número de usuários ou órgãos.
+A ferramenta é multiplicável por design: é software livre, os repositórios são públicos no GitHub (organização splor-mg), 100% gratuito, sem custo que cresça com o número de usuários ou órgãos.
 
 O modelo de multiplicação é orgânico: cada órgão que adota e desenvolve fluxos pode contribuir com eles ao repositório compartilhado. Um fluxo construído para uma tarefa do SIAD, por exemplo, pode ser reaproveitado por outro órgão que realiza a mesma operação. Quanto mais órgãos adotam, mais fluxos ficam disponíveis para todos — o valor da ferramenta cresce com a comunidade de uso.
 
@@ -185,7 +189,7 @@ A replicabilidade também alcança outros entes: municípios e estados que opera
 
 ### Recursos necessários `[máx 2.000 caracteres — atual: 768]`
 ```
-Em software, todo o stack é gratuito: Python (linguagem), py3270 (interface Python para o terminal), x3270/s3270 (emulador TN3270 headless) e Git (controle de versão). Nenhuma licença, nenhum custo recorrente de ferramenta.
+Em termos de software, todas as ferramentas são gratuitas: Python (linguagem), py3270 (interface Python para o terminal), x3270/s3270 (emulador TN3270 headless) e Git (controle de versão). Nenhuma licença, nenhum custo recorrente de ferramenta.
 
 Em hardware, a ferramenta roda em qualquer computador com Linux ou Windows com WSL. Não há exigência de servidor dedicado, edição corporativa do sistema operacional ou requisito especial de CPU. Uma vantagem relevante no contexto estadual: por rodar em qualquer Linux moderno, a ferramenta pode ser instalada em hardware antigo que não atende os requisitos mínimos do Windows 10. Uma máquina dessa geração — que de outra forma ficaria ociosa ou seria descartada — pode ser reformatada com uma distribuição Linux leve e transformada em nó de automação dedicado, sem custo de hardware adicional.
 
@@ -194,7 +198,7 @@ Em pessoas, a adoção requer ao menos um servidor com conhecimento básico de P
 
 ### Custos de implantação/manutenção `[máx 1.000 caracteres — atual: 509]`
 ```
-O custo da ferramenta em si é zero: todo o stack tecnológico é gratuito e de código aberto. O custo de implantação se concentra no tempo de desenvolvimento de cada fluxo de automação, que varia conforme a complexidade da tarefa a automatizar. Fluxos mais simples podem ser construídos em dias; fluxos complexos podem demandar semanas.
+O custo da ferramenta em si é zero: todas as ferramentas utilizadas são gratuitas e de código aberto. O custo de implantação se concentra no tempo de desenvolvimento de cada fluxo de automação, que varia conforme a complexidade da tarefa a automatizar. Fluxos mais simples podem ser construídos em dias; fluxos complexos podem demandar semanas. Mas devemos considerar que uma vez construídos o processo manual é eliminado permanentemente.
 
 A manutenção é de baixo custo: fluxos existentes raramente precisam de atualização (o protocolo TN3270 é estável), e quando precisam, a intervenção é cirúrgica e localizada.
 ```
@@ -231,7 +235,7 @@ A solução tem três componentes. A biblioteca técnica é formada por py3270 e
 
 ### Outras observações (Tela 5) `[máx 2.000 caracteres]`
 ```
-A biblioteca já está desenvolvida e em operação real desde maio de 2024 na SPLOR/SEPLAG. O que esta proposta adiciona é a institucionalização: tornar a ferramenta conhecida, documentada e acessível a qualquer órgão do Estado que queira adotá-la. O cronograma acima reflete essa fase de disseminação, que pode ocorrer em paralelo ao uso contínuo da ferramenta pela equipe proponente.
+A biblioteca já está desenvolvida e em operação real desde maio de 2026 na SPLOR/SEPLAG. O que esta proposta adiciona é a institucionalização: tornar a ferramenta conhecida, documentada e acessível a qualquer órgão do Estado que queira adotá-la. O cronograma acima reflete essa fase de disseminação, que pode ocorrer em paralelo ao uso contínuo da ferramenta pela equipe proponente.
 ```
 
 ---
